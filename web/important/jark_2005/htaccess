@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^jark.succulent64.ml$ [NC]
-RewriteRule ^(.*)$ http://www.google.com/$1 [L,R]

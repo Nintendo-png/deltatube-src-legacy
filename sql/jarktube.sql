@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2021 at 03:22 AM
+-- Generation Time: Dec 23, 2021 at 05:50 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.30
 
@@ -24,27 +24,44 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `rate`
+--
+
+CREATE TABLE `rate` (
+  `rating_type` text NOT NULL,
+  `vid` varchar(50) NOT NULL,
+  `rateid` varchar(11) NOT NULL,
+  `uid` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subscriber`
+--
+
+CREATE TABLE `subscriber` (
+  `vuid` varchar(10) NOT NULL COMMENT 'viewer user id',
+  `cuid` varchar(10) NOT NULL COMMENT 'creator user id',
+  `subid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
   `username` text NOT NULL,
   `userid` varchar(8) NOT NULL,
-  `userinfo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `flag` int(11) NOT NULL,
   `email_addr` longtext NOT NULL,
   `lastlogin` varchar(29) DEFAULT NULL,
   `usernum` int(11) NOT NULL,
-  `passhash` longtext NOT NULL
+  `passhash` longtext NOT NULL,
+  `channel_desc` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='User Info';
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`username`, `userid`, `userinfo`, `flag`, `email_addr`, `lastlogin`, `usernum`, `passhash`) VALUES
-('test1', '4838aa73', NULL, 0, 'testemail@test.com', '10/16/2021 02:36.29', 1, '$2y$10$ynzFEqx36nBHS6CYqJ87CuqR4mg2k7X/Sxvj.px6fGN4zBRw5F18e'),
-('bantest2', 'f654796f', NULL, 1, 'tobebanned@test.com', '10/15/2021 06:38.13', 2, '$2y$10$5dpbM38BdSFMGoaroORdp..KRG95Mg.aYsR1TySzXmEWGAUEq6Te2');
 
 -- --------------------------------------------------------
 
@@ -53,25 +70,46 @@ INSERT INTO `user` (`username`, `userid`, `userinfo`, `flag`, `email_addr`, `las
 --
 
 CREATE TABLE `video` (
-  `title` varchar(70) NOT NULL,
-  `video_desc` varchar(250) NOT NULL,
-  `video_id` varchar(12) NOT NULL,
-  `user_id` varchar(8) NOT NULL,
-  `date_time` date NOT NULL,
-  `video_no` int(11) NOT NULL,
-  `featured` int(11) NOT NULL
+  `rid` varchar(9) NOT NULL COMMENT 'rid (ex: Kh9nGakrf)',
+  `vtitle` text NOT NULL COMMENT 'title',
+  `vdesc` text NOT NULL COMMENT 'description',
+  `published` varchar(7) NOT NULL COMMENT 'publish date (ex: 010505 jan 1 2005)',
+  `uid` varchar(14) NOT NULL COMMENT 'user id (ex: HCPvDBPPFfuaM)',
+  `keywords` text NOT NULL,
+  `vtime` varchar(5) NOT NULL,
+  `category` varchar(3) NOT NULL COMMENT 'category (ex: am auto and moters)',
+  `video_type` text NOT NULL DEFAULT 'public',
+  `annotations` varchar(1) NOT NULL COMMENT 'Todo: make annotations',
+  `featured` int(11) NOT NULL COMMENT 'featured video'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `video`
+-- Table structure for table `views`
 --
 
-INSERT INTO `video` (`title`, `video_desc`, `video_id`, `user_id`, `date_time`, `video_no`, `featured`) VALUES
-('Test lol', 'fff', '_eoppP5jBoM', 'G78HND', '2009-08-08', 1, 1);
+CREATE TABLE `views` (
+  `viewid` varchar(11) NOT NULL COMMENT 'lmmao viewids',
+  `uid` varchar(50) DEFAULT NULL,
+  `vid` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `rate`
+--
+ALTER TABLE `rate`
+  ADD UNIQUE KEY `rateid` (`rateid`);
+
+--
+-- Indexes for table `subscriber`
+--
+ALTER TABLE `subscriber`
+  ADD PRIMARY KEY (`subid`);
 
 --
 -- Indexes for table `user`
@@ -83,23 +121,29 @@ ALTER TABLE `user`
 -- Indexes for table `video`
 --
 ALTER TABLE `video`
-  ADD PRIMARY KEY (`video_no`,`video_id`) USING BTREE;
+  ADD UNIQUE KEY `rid` (`rid`);
+
+--
+-- Indexes for table `views`
+--
+ALTER TABLE `views`
+  ADD PRIMARY KEY (`viewid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
+-- AUTO_INCREMENT for table `subscriber`
+--
+ALTER TABLE `subscriber`
+  MODIFY `subid` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `usernum` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `video`
---
-ALTER TABLE `video`
-  MODIFY `video_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `usernum` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
