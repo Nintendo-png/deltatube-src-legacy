@@ -21,7 +21,7 @@ if(isset($_GET['video_id'])) {
 $fmt_map = array(
 //the map that plays videos
 'itag' => '43',
-'url' => 'http://jark.succulent64.ml/ytd/video/' . $_GET['video_id'] . '.mp4',
+'url' => '/ytd/video/' . $_GET['video_id'] . '.mp4',
 'sig' => 'jark' . rand(1, 8) . '-' . bin2hex(random_bytes(5)),
 'fallback_host' => 'tc.v14.cache3.c.youtube.com',
 'quality' => 'hd1080',
@@ -31,7 +31,7 @@ $fmt_map = array(
 		$fmt_map = array(
 //the map that plays videos
 'itag' => '43',
-'url' => 'http://jark.succulent64.ml/ytd/video/' . $_GET['video_id'] . '.mp4',
+'url' => '/ytd/video/' . $_GET['video_id'] . '.mp4',
 'sig' => 'jark' . rand(1, 8) . '-' . bin2hex(random_bytes(5)),
 'fallback_host' => 'tc.v14.cache3.c.youtube.com',
 'quality' => 'hd720',
