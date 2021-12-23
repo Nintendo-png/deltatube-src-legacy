@@ -1,0 +1,2 @@
+v = videos (proccessed through ffmpeg and ffpreg)
+t = thumbnails (created by ffpreg)

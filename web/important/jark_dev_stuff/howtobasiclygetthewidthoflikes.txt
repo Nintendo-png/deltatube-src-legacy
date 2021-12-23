@@ -1,0 +1,23 @@
+How to calculate the width of likes and dislikes by succulent64:
+
+Um you multiply 100 by likes divided by likes plus dislikes. You get the width of likes.
+
+For dislikes, you do the same thing, but switch the first call of likes with dislikes.
+
+Basicly, you multiply 100 by dislikes divided by likes plus dislikes. You then get the width of dislikes.
+
+Here's this in calculator form:
+
+I'm very dumb, so math symbols
+
+/ is division
+
+* is multiplcation
+
+likes width (j) = 100 * (likes / (likes + dislikes))
+ 
+dislikes width (l) = 100 * (dislikes / (likes + dislikes))
+ 
+Now, here's this in PHP form:
+
+<?php echo 100 * (1 / (0 + 1)); ?>

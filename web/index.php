@@ -1,324 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-<title>JarkTube - Impregnate Yourself</title>
-<link href="/css/styles.css?<?php echo date('His'); ?>" rel="stylesheet" type="text/css">
-</head>
-<body>
-<table width="800" cellpadding="0" cellspacing="0" border="0" align="center">
-	<tr>
-		<td bgcolor="#FFFFFF" style="padding-bottom: 25px;">
-		
+<?php 
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php"); 
+	$initvid = new video_tools;
+	$initusr = new user_tools;
+?>
+	<title>JarkTube</title>
+	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
+	<meta name="description" content="An Hitchhiker 2013 YouTube revival">
+	<meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">
+	<link id="css-4115735524" rel="stylesheet" href="/yts/cssbin/www-hitchhiker-vflTcqmWD.css">
+	<link id="css-583125701" rel="stylesheet" href="/yts/cssbin/www-the-rest-vflzYVqky.css">
+<link id="css-3687597597" rel="stylesheet" href="/yts/cssbin/www-home-c4-vfl4MbzOD.css">	
+	    <script id="js-528919983" src="/yts/jsbin/www-core-vflG1GmWt.js" data-loaded="true"></script>
+    <script id="js-1576221815" src="/yts/jsbin/www-guide-vflDWtzlu.js" data-loaded="true"></script>
+    <script id="js-3726928039" src="/yts/jsbin/www-home-vflVATumV.js" data-loaded="true"></script>
+    <script id="js-1128033138" src="/yts/jsbin/www-guidev2-vflxw2ZhL.js" data-loaded="true"></script>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	</head>
 
-	<?php include_once("header.php"); 
-	$home = "home";
-	if(isset($_GET['v'])) {
-		$initvid = new video_tools;
-		if(empty($initvid->validate_video_id($_GET['v']))) {
-			echo '<script>window.location.href = "404.php"</script>';
-		} else {
-			echo '<script>window.location.href = "watch.php?v=' . $_GET['v'] . '"</script>';
-		}
-		} 
-	?>
-	
-<table width="790" align="center" cellpadding="0" cellspacing="0" border="0">
-	<tr valign="top">
-		<td style="padding-right: 15px;">
+<body class="ltr exp-new-site-width exp-watch7-comment-ui site-left-aligned hitchhiker-enabled guide-enabled guide-expanded" dir="ltr">
+	<div id="body-container">
+		<!-- begin page -->
+		<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/header.php"); ?>
 		
-		<?php if(!isset($_SESSION['user'])) { ?><table width="595" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#E5ECF9">
-			<tr>
-				<td><img src="/img/box_login_tl.gif" width="5" height="5"></td>
-				<td width="100%"><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-				<td style="padding: 5px 0px 5px 0px;">
-				
-								
-				<table width="100%" cellpadding="0" cellspacing="0" border="0">
-					<tr valign="top">
-					<td width="33%" style="border-right: 1px dashed #369; padding: 0px 10px 10px 10px; color: #444;">
-					<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;"><a href="browse.php">Watch</a></div>
-					Instantly cringe at this website.</title>
-					</td>
-					<td width="33%" style="border-right: 1px dashed #369; padding: 0px 10px 10px 10px; color: #444;">
-					<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;"><a href="my_videos_upload.php">Upload</a></div>
-					Quickly find backdoors and XSS vulnerabilities.
-					</td>
-					<td width="33%" style="padding: 0px 10px 10px 10px; color: #444;">
-					<div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;"><a href="my_friends_invite.php">Share</a></div>
-					Look at videos make by 11-year-olds desperate for robux.
-					</td>
-					</tr>
-				</table>
-
-									
-				</td>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table><?php } ?>
-
-
-		<div style="padding: 10px 0px 10px 0px;">
-		<table width="595" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEEEDD">
-			<tr>
-				<td><img src="/img/box_login_tl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-				<td width="585">
-				<div style="padding: 2px 5px 8px 5px;">
-				<div style="float: right; padding: 1px 5px 0px 0px; font-weight: bold; font-size: 12px;"><a href="browse.php?s=mp">More Recently Viewed</a></div>
-				<div style="font-size: 14px; font-weight: bold; color: #666633;">Recently Viewed...</div>
-				
-				<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-				<tr>
-							
-						<td width="20%" align="center">
+	<div id="alerts" style="margin-bottom: 10px;margin-top: 10px;">
+	<?php if(isset($_GET['debugip'])) { ?>
+<div class="yt-alert yt-alert-default yt-alert-info">  <div class="yt-alert-icon">
+    <img src="/yts/img/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon">
+  </div>
+<div class="yt-alert-buttons"></div><div class="yt-alert-content" role="alert">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+	<?php echo $_SERVER["HTTP_CF_CONNECTING_IP"]; ?>
+    </div>
+</div></div>
+<?php } ?>
+<?php if(isset($_GET['file_unsupported_img'])) { ?>
+<div class="yt-alert yt-alert-default yt-alert-error">  <div class="yt-alert-icon">
+    <img src="/yts/img/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon">
+  </div>
+<div class="yt-alert-buttons"></div><div class="yt-alert-content" role="alert">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+	The file you submitted was not supported. Please use supported files like GIF, PNG, or JPG.
+    </div>
+</div></div>
+<?php }  ?>
+<?php if(isset($_GET['file_success_img'])) { ?>
+<div class="yt-alert yt-alert-default yt-alert-success">  <div class="yt-alert-icon">
+    <img src="/yts/img/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon">
+  </div>
+<div class="yt-alert-buttons"></div><div class="yt-alert-content" role="alert">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+	File successfully uploaded.
+    </div>
+</div></div>
+<?php } ?>
+	<div class="yt-alert yt-alert-default yt-alert-warn">  <div class="yt-alert-icon">
+    <img src="/yts/img/pixel-vfl3z5WfW.gif" class="icon master-sprite" alt="Alert icon">
+  </div>
+<div class="yt-alert-buttons"></div><div class="yt-alert-content" role="alert">    <span class="yt-alert-vertical-trick"></span>
+    <div class="yt-alert-message">
+	This is in beta like the website this is hosted on, so use at your own risk.
+    </div>
+</div></div>
+	</div>
+      
+		<div id="page-container">
 		
-						<a href="index.php?v=Dy9x6GKZERg"><img src="/get_still.php?video_id=Dy9x6GKZERg" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">0 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=h1FA31Oliuo"><img src="/get_still.php?video_id=h1FA31Oliuo" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">0 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=sVyA5xe-UrE"><img src="/get_still.php?video_id=sVyA5xe-UrE" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">0 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=qVdDDhmjUSc"><img src="/get_still.php?video_id=qVdDDhmjUSc" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">0 seconds ago</div>
-		
-						</td>
-		
-								
-						<td width="20%" align="center">
-		
-						<a href="index.php?v=PaluLFfv0EI"><img src="/get_still.php?video_id=PaluLFfv0EI" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-						<div class="moduleFeaturedDetails" style="padding-top: 2px;">0 seconds ago</div>
-		
-						</td>
-		
-										</tr>
-				</table>
-				
-				</div>
-				</td>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
-		</div>
-		
-
-		<!-- begin recently featured -->
-		<table width="595" style="margin-top: 5px;" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#CCCCCC">
-			<tr>
-				<td><img src="/img/box_login_tl.gif" width="5" height="5"></td>
-				<td width="100%"><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-				<td width="585">
-				<div class="moduleTitleBar">
-				<div class="moduleTitle"><div style="float: right; padding: 1px 5px 0px 0px; font-size: 12px;"><a href="browse.php">See More Videos</a></div>
-				Today's Featured Videos
-				</div>
-				</div>
-		
-				
-					<div class="moduleEntry">
-					<table width="565" cellpadding="0" cellspacing="0" border="0">
-						<tr valign="top">
-							<td><a href="index.php?v=_eoppP5jBoM"><img src="/get_still.php?video_id=_eoppP5jBoM" class="moduleEntryThumb" width="120" height="90"></a>
-							</td>
-							<td width="100%"><div class="moduleEntryTitle"><a href="index.php?v=_eoppP5jBoM">test</a></div>
-							<div class="moduleEntryDescription">Glenn's Sky Dive</div>
-					
-							<div class="moduleEntryTags">
-							Tags // <a href="results.php?search=Skydiving">Skydiving</a> : <a href="results.php?search=test">test</a> : <a href="results.php?search=test">test</a> : 							</div>
-							
-							<div class="moduleEntryDetails">Added: 0 hours ago by <a href="profile.php?user=bramjr">profile</a></div>
-							<div class="moduleEntryDetails">Runtime: 00:00 | Views: 0 | Comments: 0</div>
-														</td>
-						</tr>
-					</table>
+			<div id="page" class="  home ">
+			
+				<div id="guide">
+					<div id="guide-container">
+						<div id="guide-main" class="guide-module " data-orientation="vertical" data-position="bottomright" data-force-position="true" data-click-outside-persists="true" data-card-class="watch7-card-promo">
+					<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/guide-module.php"); ?>
+						</div>
+						<div id="watch-context-container" class="guide-module hid " data-orientation="vertical" data-position="bottomright" data-force-position="true" data-click-outside-persists="true" data-card-class="watch7-card-promo"> </div>
 					</div>
-					
-									
-				</td>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
-		<!-- end recently featured -->
-
-		
-		</td>
-		<td width="180">
-		
-		<table width="180" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFEEBB">
-			<tr>
-				<td><img src="/img/box_login_tl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-				<td width="170">
-								
-				<div style="font-size: 16px; font-weight: bold; text-align: center; padding: 5px 5px 10px 5px;"><a href="
-				<?php if(!isset($_SESSION['user'])) { ?>signup.php<?php } else { ?>my_friends_invite.php<?php } ?>">
-				<?php if(!isset($_SESSION['user'])) { ?>Sign up for your free account!<?php } else { ?>Invite your friends to join JarkTube!<?php } ?></a></div>
-				
-								
-				</td>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
-		<!--
-		<div style="margin-top: 10px;">
-		<table width="180" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFCC99">
-			<tr>
-				<td><img src="/img/box_login_tl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-				<td width="170" style="padding: 5px; text-align: center;">
-				<div style="font-weight: bold; font-size: 13px;">(Insert Month here) Video Contest!</div>
-
-				<a href="watch.php?v=HUOXnag62mE&amp;search=backtoschool"><img src="/get_still.php?video_id=HUOXnag62mE" width="80" height="60" style="border: 5px solid #FFFFFF; margin-top: 10px;"></a>
-				
-				<div style="font-size: 16px; font-weight: bold; padding-top: 5px;"><a href="results.php?search=backtoschool">Back to school!</a></div>
-				<br>
-
-								
-				<div style="font-size: 12px; font-weight: bold; margin-bottom: 7px;"><a href="signup.php">Join the contest now!</a></div>
-				
-								<div style="font-size: 10px; font-weight: normal; margin-bottom: 3px;"><a href="monthly_contest_august_2005.php">August winners!</a></div>
-				
-				</td>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
-		</div>
-		-->
-		<div style="margin: 10px 0px 5px 0px; font-size: 12px; font-weight: bold; color: #333;">Recent Tags:</div>
-		<div style="font-size: 13px; color: #333333;">
-		
-			<a style="font-size: 17px;" href="results.php?search=test">test</a> :
-		
-					
-		<div style="font-size: 14px; font-weight: bold; margin-top: 10px;"><a href="tags.php">See More Tags</a></div>
-		
-		</div>
-
-		<div style="padding-top: 15px;">
-		<table width="180" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#EEEEDD">
-			<tr>
-				<td><img src="/img/box_login_tl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_tr.gif" width="5" height="5"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-				<td width="170">
-
-				<div style="padding: 2px 5px 10px 5px;">
-				<div style="font-size: 14px; font-weight: bold; margin-bottom: 8px; color: #666633;">Last 15 users online...</div>
-
-				
-					<div style="font-size: 12px; font-weight: bold; margin-bottom: 5px;"><a href="profile.php?user=ladylike3yn">ladylike3yn</a></div>
-
-					<div style="font-size: 12px; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px dashed #CCCC66;"><a href="profile_videos.php?user=ladylike3yn"><img src="/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_videos.php?user=ladylike3yn">0</a>)
-					 | <a href="profile_favorites.php?user=ladylike3yn"><img src="/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_favorites.php?user=ladylike3yn">0</a>)
-					 | <a href="profile_friends.php?user=ladylike3yn"><img src="/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"></a> (<a href="profile_friends.php?user=ladylike3yn">0</a>)</div>
-
-									
-				<div style="font-weight: bold; margin-bottom: 5px;">Icon Key:</div>
-				<div style="margin-bottom: 4px;"><img src="/img/icon_vid.gif" alt="Videos" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Videos</div>
-				<div style="margin-bottom: 4px;"><img src="/img/icon_fav.gif" alt="Favorites" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Favorites</div>
-				<img src="/img/icon_friends.gif" alt="Friends" width="14" height="14" border="0" style="vertical-align: text-bottom; padding-left: 2px; padding-right: 1px;"> - Friends
-				
 				</div>
-
-				</td>
-				<td><img src="/img/pixel.gif" width="5" height="1"></td>
-			</tr>
-			<tr>
-				<td><img src="/img/box_login_bl.gif" width="5" height="5"></td>
-				<td><img src="/img/pixel.gif" width="1" height="5"></td>
-				<td><img src="/img/box_login_br.gif" width="5" height="5"></td>
-			</tr>
-		</table>
+				<div id="content">
+					<?php if(!isset($_COOKIE['sessionuser'])) { require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/index-noauth.php"); }
+					else { require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/index-hasauth.php"); }?>
+				</div>
+			</div>
 		</div>
-		
-		</td>
-	</tr>
-</table>
 
-		</div>
-		</td>
-	</tr>
-</table>
-<?php include_once("footer.php"); ?>
+	<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/footer.php"); ?>
+	
+    <script>
+        yt.setConfig({
+          <?php if(!isset($_COOKIE['sessionuser'])) { ?> 'GUIDE_SELECTED_FEED': "youtube"<?php } else { ?>
+		  'GUIDE_SELECTED_FEED': "what_to_watch" <?php } ?>
+        });
+    </script>
+	<script>
+    yt.www.guide.init();
 
-<div id="sheet" style="position:fixed; top:0px; visibility:hidden; width:100%; text-align:center;">
-<table width="100%">
-<tr>
-<td align="center">
-<div id="sheetContent" style="filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5; border: 1px solid black; background-color:#cccccc; width:40%; text-align:left;"></div>
-</td>
-</tr>
-</table>
-</div>
-
-<div id="tooltip"></div>
-
+  </script>
+	<div id="debug"> </div>
 </body>
+
 </html>

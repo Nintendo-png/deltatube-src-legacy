@@ -1,0 +1,16 @@
+Hello and thanks for joining JarkTube from the advertisements in SubRocks or Vidlii
+
+JarkTube is an YouTube Hitchhiker (YouTube 2012-2017) revival, an successor to NoobTube, and overall an shitty website.
+
+Yes, I know FulpTube did this, but it died so ...
+
+Website (beta):    
+                                                                        
+http://jark.succulent64.ml (might limit this to ngrok tunnels)
+
+Why:
+I made this as NoobTube shut down to to XSS and stuff
+
+Also, I counted vote for which layout people wanted the most and 2013 won.
+
+JarkTube is no affiliated at all with YouTube or any of the other OIC YouTube sites.

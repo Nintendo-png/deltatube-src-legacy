@@ -1,0 +1,5 @@
+1: make a barebones uploader
+2: get comments to work
+3: make likes and dislikes
+4: make channels and subscriptions
+5: complete JarkTube alpha

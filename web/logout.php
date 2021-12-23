@@ -1,7 +1,6 @@
 <?php
-session_start();
-session_unset();
-if(!isset($_SESSION['user'])) {
-	header("Location: index.php");
-}
+//logout page
+// very simple script. Just expiring the cookie.
+setcookie("sessionuser", "", time() - 3600);
+header("Location: /");
 ?>

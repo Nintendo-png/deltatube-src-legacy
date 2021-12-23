@@ -1,0 +1,56 @@
+hl = lang (en_us)
+cc_module= an swf
+track_embed = 0
+video_verticals= [933, 8, 930]
+vq = auto
+title = video title
+sendtmp = 1
+avg_rating = rating (ex: 5.0)
+ttsurl = http://www.youtube.com/api/timedtext?signature=E949556D4478C57B95F0E4268F8D85D460D27DF6.1EC1679B0E1466625B2A029D836BE9C135A0B300&hl=en_US
+caps = asr
+expire = 1361228889 
+sparams = asr_langs,caps,v,expire
+v = MmB9b5njVbA
+key = yttt1
+asr_langs = ko,de,pt,en,nl,ja,ru,es,fr,i$$t
+----------------------------------------
+url_encoded_fmt_stream_map =
+itag = 43 
+url = video url 
+sig = whatever 
+fallback_host = tc.v14.cache3.c.youtube.com
+quality = tiny, medium, hd720 or large (ex: tiny)
+type = video/webm; codecs="vp8.0, vorbis"
+---------------------------------------
+repeats with different signatures and video files
+---------------------------------------
+plid = AATWAe5iQ_FjAV-I
+view_count = num of views
+cc_asr = 1
+token = vjVQa1PpcFPQw_h19VxFJZdJZbKkh5-obrhC9M93j-E
+no_get_video_log = 1
+muted = 0
+allow_ratings = 1
+keywords = keywords
+account_playback_token = (nothing?)
+video_id = video id 
+thumbnail_url = thumbnail url
+status = ok
+has_cc = True
+fexp = 907063,919329,913565,920704,912806,902000,922403,922405,929901,913605,925006,908529,920201,930101,911116,926403,910221,901451,919114
+ftoken = (nothing again?)
+iurlsd = standard def thumbnail
+cc_font = Arial Unicode MS, arial, verdana, _sans
+pltype = contentugc
+allow_embed = 1
+author = author
+length_seconds = 0
+storyboard_spec = (nothing once again?)
+abd = 1
+iurlmaxres = max res high def thumbnail
+watermark = watermark (,http://s.ytimg.com/yts/img/watermark/youtube_watermark-vflHX6b6E.png,http://s.ytimg.com/yts/img/watermark/youtube_hd_watermark-vflAzLcD6.png)
+cc3_module = http://s.ytimg.com/yts/swfbin/subtitles3_module-vflfzxB9O.swf
+tmi = 1
+ptk = youtube_none
+endscreen_module = http://s.ytimg.com/yts/swfbin/endscreen-vfl4_CAIR.swf
+fmt_list = 45/1280x720/99/0/0,22/1280x720/9/0/115,44/854x480/99/0/0,35/854x480/9/0/115,43/640x360/99/0/0,34/640x360/9/0/115,18/640x360/9/0/115,5/320x240/7/0/0,36/320x240/99/0/0,17/176x144/99/0/0×tamp=1361203689

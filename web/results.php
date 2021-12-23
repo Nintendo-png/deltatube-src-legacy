@@ -1,133 +1,157 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-<title>JarkTube - Impregnate Yourself</title>
-<link href="/css/styles.css?<?php echo date('His'); ?>" rel="stylesheet" type="text/css">
-</head>
-<body>
-<table width="800" cellpadding="0" cellspacing="0" border="0" align="center">
-	<tr>
-		<td bgcolor="#FFFFFF" style="padding-bottom: 25px;">
-		
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php"); 
+	$initvid = new video_tools;
+	$initusr = new user_tools;
+	$initgnt = new general_tools;
+?>
+	<title>JarkTube</title>
+	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
+	<meta name="description" content="An Hitchhiker 2013 YouTube revival">
+	<meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">
+	<link id="css-4115735524" rel="stylesheet" href="/yts/cssbin/www-hitchhiker-vflTcqmWD.css">
+<link id="css-3687597597" rel="stylesheet" href="/yts/cssbin/www-home-c4-vfl4MbzOD.css">	
+	<link id="css-3096980634" rel="stylesheet" href="/yts/cssbin/www-resultsh2-vfldbLcxB.css">
+	<script id="js-528919983" src="/yts/jsbin/www-core-vflG1GmWt.js" data-loaded="true"></script>
+    <script id="js-1576221815" src="/yts/jsbin/www-guide-vflDWtzlu.js" data-loaded="true"></script>
+    <script id="js-3726928039" src="/yts/jsbin/www-home-vflVATumV.js" data-loaded="true"></script>
+    <script id="js-1128033138" src="/yts/jsbin/www-guidev2-vflxw2ZhL.js" data-loaded="true"></script>
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
+	</head>
 
-	<?php include_once("header.php"); ?>
-	
-<div style="color: #333; margin-bottom: 10px;">Related Tags:
-
-		<a href="results.php?search=test">test</a>
-
+<body class="ltr exp-new-site-width exp-watch7-comment-ui site-left-aligned hitchhiker-enabled guide-enabled guide-expanded" dir="ltr">
+	<div id="body-container">
+		<!-- begin page -->
+		<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/header.php"); ?>
+	<div id="alerts">
 	</div>
-
-<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#CCCCCC">
-	<tr>
-		<td><img src="img/box_login_tl.gif" width="5" height="5"></td>
-		<td width="100%"><img src="img/pixel.gif" width="1" height="5"></td>
-		<td><img src="img/box_login_tr.gif" width="5" height="5"></td>
-	</tr>
-	<tr>
-		<td><img src="img/pixel.gif" width="5" height="1"></td>
-		<td>
-			
-
-	<div class="moduleTitleBar">
-	<table width="100%" cellpadding="0" cellspacing="0" border="0">
-		<tr valign="top">
-			<td><div class="moduleTitle">Search // test</div></td>
-			<td align="right">
-			<div style="font-weight: color: #444; margin-right: 5px;">
-					Results <b>1-10</b> of <b>41</b> for <b>'test'</b>.
-
-				<b>0.18</b> seconds
-			</div>
-			</td>
-		</tr>
-	</table>
-	</div>
-
-
-		<div class="moduleEntry"> 
-			<table width="100%" cellpadding="0" cellspacing="0" border="0">
-				<tr valign="top">
-					<td>
-					<table cellpadding="0" cellspacing="0" border="0">
-						<tr>
-							<td><a href="watch.php?v=f2ZWkVwjy_Y&amp;search=backtoschool"><img src="get_still.php?video_id=f2ZWkVwjy_Y&amp;still_id=1" class="moduleEntryThumb" width="100" height="75"></a></td>
-							<td><a href="watch.php?v=f2ZWkVwjy_Y&amp;search=backtoschool"><img src="get_still.php?video_id=f2ZWkVwjy_Y&amp;still_id=2" class="moduleEntryThumb" width="100" height="75"></a></td>
-							<td><a href="watch.php?v=f2ZWkVwjy_Y&amp;search=backtoschool"><img src="get_still.php?video_id=f2ZWkVwjy_Y&amp;still_id=3" class="moduleEntryThumb" width="100" height="75"></a></td>
-						</tr>
-					</table>
-					
-					</td>
-					<td width="100%"><div class="moduleEntryTitle"><a href="watch.php?v=f2ZWkVwjy_Y&amp;search=backtoschool">test</a></div>
-					<div class="moduleEntryDescription">test</div>
-					<div class="moduleEntryTags">
-					Tags // <a href="results.php?search=Nude">test</a>
+		<div id="header"></div>
+				<div id="page-container">
+	<div id="page" class="search-base">
+			<div id="guide">
+					<div id="guide-container">
+						<div id="guide-main" class="guide-module " data-orientation="vertical" data-position="bottomright" data-force-position="true" data-click-outside-persists="true" data-card-class="watch7-card-promo">
+					<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/yts/modbin/guide-module.php"); ?>
+						</div>
+						<div id="watch-context-container" class="guide-module hid " data-orientation="vertical" data-position="bottomright" data-force-position="true" data-click-outside-persists="true" data-card-class="watch7-card-promo"> </div>
 					</div>
-					<div class="moduleEntryDetails">Added: 0 weeks ago by <a href="profile.php?user=TheDan">TheDan</a></div>
-					<div class="moduleEntryDetails">Runtime: 02:42 | Views: 815 | Comments: 0</div>
-								
-	<nobr>
-			<img style="border:0px; padding:0px; margin:0px; vertical-align:middle;" src="/img/star.gif">
-			<img style="border:0px; padding:0px; margin:0px; vertical-align:middle;" src="/img/star.gif">
-			<img style="border:0px; padding:0px; margin:0px; vertical-align:middle;" src="/img/star.gif">
-			<img style="border:0px; padding:0px; margin:0px; vertical-align:middle;" src="/img/star.gif">
-			<img style="border:0px; padding:0px; margin:0px; vertical-align:middle;" src="/img/star_half.gif">
-	</nobr>
+				</div>
+    <!-- begin content -->
+    <div id="content" style="margin-bottom: 283px;">  
+  <div id="context-source-container" data-context-source="" style="display:none;"></div>
+  <div class="primary-col">
+    <div class="search-header yt-uix-expander yt-uix-expander-collapsed">
+        <div class="filter-top">
+    <button type="button" class="filter-button yt-uix-expander-head yt-uix-button yt-uix-button-hh-default yt-uix-button-short" onclick=";return false;" data-button-toggle="true" data-button-menu-id="some-nonexistent-menu" data-button-action="" role="button"><span class="yt-uix-button-content">Filters </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+    <ul class="filter-crumb-list">  <li class="filter-crumb filter-crumb-ghost filter-crumb-inactive" title="">
+    <span class="filter-text"></span>
+      <a href="" class="yt-close">&times;</a>
 
+  </li>
+</ul>
+      <p class="num-results">
+About <strong>173,000,000</strong> results
+  </p>
 
-					</td>
-				</tr>
-			</table>
-		</div>
+    <br class="clear"/>
+  </div>
 
-					<div style="font-size: 13px; font-weight: bold; color: #444; text-align: right; padding: 5px 0px 5px 0px;">Result Page:
-
-
-				<span style="color: #444; background-color: #FFFFFF; padding: 1px 4px 1px 4px; border: 1px solid #999; margin-right: 5px;">1</span>
-
-				<span style="background-color: #CCC; padding: 1px 4px 1px 4px; border: 1px solid #999; margin-right: 5px;"><a href="results.php?search=backtoschool&amp;page=2">2</a></span>
-
-				<span style="background-color: #CCC; padding: 1px 4px 1px 4px; border: 1px solid #999; margin-right: 5px;"><a href="results.php?search=backtoschool&amp;page=3">3</a></span>
-
-				<span style="background-color: #CCC; padding: 1px 4px 1px 4px; border: 1px solid #999; margin-right: 5px;"><a href="results.php?search=backtoschool&amp;page=4">4</a></span>
-
-			<a href="results.php?search=backtoschool&amp;page=2">Next&nbsp;&gt;</a>&nbsp;
-	</div>
-
-
-		</td>
-		<td><img src="img/pixel.gif" width="5" height="1"></td>
-	</tr>
-	<tr>
-		<td><img src="img/box_login_bl.gif" width="5" height="5"></td>
-		<td><img src="img/pixel.gif" width="1" height="5"></td>
-		<td><img src="img/box_login_br.gif" width="5" height="5"></td>
-	</tr>
-</table>
-		
-
-
-		</td>
-	</tr>
-</table>
-		</div>
-		</td>
-	</tr>
-</table>
-<?php include_once("footer.php"); ?>
-
-<div id="sheet" style="position:fixed; top:0px; visibility:hidden; width:100%; text-align:center;">
-<table width="100%">
-<tr>
-<td align="center">
-<div id="sheetContent" style="filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5; border: 1px solid black; background-color:#cccccc; width:40%; text-align:left;"></div>
-</td>
-</tr>
-</table>
+        <div id="filter-dropdown" class="yt-uix-expander-body">
+            <div class="filter-col">
+<h4 class="filter-col-title">Upload Date</h4>
+<ul>
+<li class="filter">
+<a class="filter-text filter-content" title="Search for hour" href="/results?search_query=hour&amp;lclk=hour">Last hour</a></li>
+<li class="filter"><a class="filter-text filter-content" title="Search for today" href="/results?search_query=today&amp;lclk=today">Today</a></li>
+<li class="filter"><a class="filter-text filter-content" title="Search for this week" href="/results?search_query=this+week&amp;lclk=this_week">This week</a></li>
+<li class="filter"><a class="filter-text filter-content" title="Search for this month" href="/results?search_query=this+month&amp;lclk=this_month">This month</a></li>
+<li class="filter"><a class="filter-text filter-content" title="Search for this year" href="/results?search_query=this+year&amp;lclk=this_year">This year</a></li>
+</ul>      
 </div>
 
-<div id="tooltip"></div>
+<div class="filter-col">
+<h4 class="filter-col-title">Result Type</h4><ul>
+<li class="filter"><a class="filter-text filter-content" title="Search for video" href="/web/20121218010322/http://youtube.com/results?search_query=video&amp;lclk=video">Video</a></li>
+<li class="filter"><a class="filter-text filter-content" title="Search for channel" href="/web/20121218010322/http://youtube.com/results?search_query=channel&amp;lclk=channel">Channel</a></li>
+<li class="filter"><a class="filter-text filter-content" title="Search for playlist" href="/web/20121218010322/http://youtube.com/results?search_query=playlist&amp;lclk=playlist">Playlist</a></li>
+</div>
+
+<div class="filter-col">
+<h4 class="filter-col-title">Duration</h4><ul><li class="filter">
+<a class="filter-text filter-content" title="Search for short" href="/web/20121218010322/http://youtube.com/results?search_query=short&amp;lclk=short">Short (~4 minutes)</a></li><li class="filter">
+<a class="filter-text filter-content" title="Search for long" href="/web/20121218010322/http://youtube.com/results?search_query=long&amp;lclk=long">Long (20~ minutes)</a></li></ul>      
+</div>
+
+<div class="filter-col">
+<h4 class="filter-col-title">Features</h4><ul>
+<li class="filter"><a class="filter-text filter-content" title="Search for cc" href="/web/20121218010322/http://youtube.com/results?search_query=cc&amp;lclk=cc">CC (closed caption)</a></li>
+</ul>     
+ </div>
+
+
+
+  </div>
+
+    </div>
+    <div id="results">
+      
+      <ol id="search-results" class="result-list context-data-container">
+    <li class="yt-lockup2 yt-lockup2-video yt-uix-tile context-data-item clearfix " data-context-item-title="Kid dances with Tampa Bay Buccaneers Cheerleaders - Gangnam Style 11/25" data-context-item-type="video" data-context-item-time="1:42" data-context-item-user="JKosby08" data-context-item-id="2RA3rc2303o" data-context-item-views="2671944"><div class="yt-lockup2-thumbnail"><a href="/web/20121218010322/http://youtube.com/watch?v=2RA3rc2303o" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto " data-sessionlink="ved=CFQQwBs%3D&amp;ei=CPSV34PhorQCFWrMRAodQnk8ow%3D%3D"><span class="video-thumb ux-thumb yt-thumb-default-185 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https:/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="//web.archive.org/web/20121218010322/http://i3.ytimg.com/vi/2RA3rc2303o/mqdefault.jpg" width="185"><span class="vertical-align"></span></span></span></span><span class="video-time">1:42</span>
+
+
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="2RA3rc2303o" role="button"><span class="yt-uix-button-content">  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a></div><div class="yt-lockup2-content"><h3 class="yt-lockup2-title"><a class="yt-uix-sessionlink yt-uix-tile-link yt-uix-contextlink " dir="ltr" title="Kid dances with Tampa Bay Buccaneers Cheerleaders - Gangnam Style 11/25" data-sessionlink="ved=CFMQvxs%3D&amp;ei=CPSV34PhorQCFWrMRAodQnk8ow%3D%3D" href="/web/20121218010322/http://youtube.com/watch?v=2RA3rc2303o">Kid dances with Tampa Bay Buccaneers Cheerleaders - Gangnam Style 11/25</a></h3><p class="yt-lockup2-meta">  by <a href="/web/20121218010322/http://youtube.com/user/JKosby08" class="yt-uix-sessionlink yt-user-name " data-sessionlink="ved=CFUQwRs%3D&amp;ei=CPSV34PhorQCFWrMRAodQnk8ow%3D%3D" dir="ltr">JKosby08</a><span class="metadata-separator">&bull;</span>1 week ago<span class="metadata-separator">&bull;</span>2,671,944 views
+</p><div class="yt-lockup2-badges"><ul class="item-badge-line"><li class="item-badge-label ">NEW</li><li class="item-badge-label ">HD</li></ul></div></div></li>
+
+      </ol>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <div class="secondary-col">
+
+  </div>
+    
+
+    <div class="yt-uix-pager" role="navigation">
+
+          
+<a href="/results?page=1" class="yt-uix-button  yt-uix-pager-button yt-uix-button-toggled yt-uix-sessionlink yt-uix-button-hh-default" data-page="1" aria-label="Go to page 1"><span class="yt-uix-button-content">1</span></a>
+          
+<a href="/results?page=2" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="2" aria-label="Go to page 2"><span class="yt-uix-button-content">2</span></a>
+          
+<a href="/results?page=3" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="3" aria-label="Go to page 3"><span class="yt-uix-button-content">3</span></a>
+          
+<a href="/results?page=4" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="4" aria-label="Go to page 4"><span class="yt-uix-button-content">4</span></a>
+          
+<a href="/results?page=5" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="5" aria-label="Go to page 5"><span class="yt-uix-button-content">5</span></a>
+          
+<a href="/results?page=6" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="6" aria-label="Go to page 6"><span class="yt-uix-button-content">6</span></a>
+          
+<a href="/results?page=7" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="7" aria-label="Go to page 7"><span class="yt-uix-button-content">7</span></a>
+
+        
+<a href="/results?page=2" class="yt-uix-button  yt-uix-pager-button yt-uix-sessionlink yt-uix-button-hh-default" data-page="2"><span class="yt-uix-button-content">Next »</span></a>
+    </div>
+
+
+</div>
+    <!-- end content -->
+	
+		</div>
+		</div>
+	<?php require_once("yts/modbin/footer.php"); ?>
+	
+	<div id="debug"> </div>
 
 </body>
+
 </html>
