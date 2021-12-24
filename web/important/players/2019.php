@@ -13,7 +13,7 @@
   <body id="" class="date-20190320 en_US ltr  exp-invert-logo exp-kevlar-settings exp-responsive exp-search-big-thumbs   site-center-aligned site-as-giant-card  " dir="ltr">
 <div id="player"></div><script>yt.setConfig({
 	'EVENT_ID': "cFA6V-vHMoOmcImlraAM",
-	'VIDEO_ID': "b0MouLJcG-Q",
+	'VIDEO_ID': "<?php echo $_GET['v']; ?>",
 });
 yt.setConfig({
 	'PLAYER_CONFIG': {
