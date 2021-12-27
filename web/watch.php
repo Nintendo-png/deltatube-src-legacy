@@ -832,7 +832,7 @@ Turn off converted 3D
 									</button><span class="yt-subscription-button-subscriber-count-branded-horizontal">0</span><span class="yt-subscription-button-disabled-mask"></span></span>
 									<?php } ?>
 									<div id="watch7-views-info"> <span class="watch-view-count">
-      <?php echo $initvid->get_views_by_id($_GET['v']); ?> views
+      <?php echo $initvid->get_views_by_id($_GET['v']); ?>
   </span>
 										<div class="video-extras-sparkbars">
 											<div class="video-extras-sparkbar-likes" style="width: 500px;"></div>
@@ -899,7 +899,7 @@ Category
 															<li>
 																<h4 class="title">License</h4>
 																<div class="content">
-																	<p id="eow-reuse"> Nonexistant License </p>
+																	<p id="eow-reuse">JarkTube Standard License</p>
 															</li>
 															</li>
 														</ul>

@@ -33,7 +33,8 @@ $initvid = new video_tools;
 			
     <!-- begin content -->
     <div id="content">
-	
+	uhhhh go on the jarktube discord and ask the owner to upload the video lol
+	(should i reuse squarebracket code)
     </div>
     <!-- end content -->
   </div>
