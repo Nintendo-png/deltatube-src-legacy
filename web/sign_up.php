@@ -7,7 +7,7 @@
   <link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
   	<link id="css-4115735524" rel="stylesheet" href="/yts/cssbin/www-hitchhiker-vflTcqmWD.css">
 	<link id="css-583125701" rel="stylesheet" href="/yts/cssbin/www-the-rest-vflzYVqky.css">	
-	  <script src='/important/ajax/signup_script.js'></script>
+	  <script src='/important/ajax/signup_script.js?<?php echo date("His"); ?>'></script>
 		    <script id="js-528919983" src="/yts/jsbin/www-core-vflG1GmWt.js" data-loaded="true"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -805,7 +805,7 @@ class PasswordMeter {
             let bar = wrapper.querySelector('.password-meter-bar');
             let input = wrapper.previousElementSibling;
 
-            input.addEventListener('keyup', () => {
+            input.addEventListener('change', () => {
                 let value = input.value;
                 bar.classList.remove('level0', 'level1', 'level2', 'level3', 'level4');
                 let result = zxcvbn(value);

@@ -17,6 +17,7 @@
 			$page = explode(".php", $_GET['page']);
 			$page = $page[0];
 		}
+		$channel_data = json_decode($initusr->get_channel_data($user[0]), 1);
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -31,55 +32,23 @@
 	<link id="css-583125701" rel="stylesheet" href="/yts/cssbin/www-the-rest-vflzYVqky.css">
     <link id="css-3687597597" rel="stylesheet" href="/yts/cssbin/www-home-c4-vfl4MbzOD.css">	
 	<script id="js-528919983" src="/yts/jsbin/www-core-vflG1GmWt.js" data-loaded="true"></script>
-	<script id="js-2844383769" src="/yts/jsbin/www-channels4-vfl29idQg.js" data-loaded="true"></script>
     <script id="js-1576221815" src="/yts/jsbin/www-guide-vflDWtzlu.js" data-loaded="true"></script>
     <script id="js-3726928039" src="/yts/jsbin/www-home-vflVATumV.js" data-loaded="true"></script>
     <script id="js-1128033138" src="/yts/jsbin/www-guidev2-vflxw2ZhL.js" data-loaded="true"></script>
+		<script id="js-2844383769" src="/yts/jsbin/www-channels4-vfl29idQg.js" data-loaded="true"></script>
 	<script src="https://kit.fontawesome.com/2a6c2dd177.js" crossorigin="anonymous"></script>
 
 	</head>
-<?php 
-$rainbow = 0;
-if ($rainbow == 1) {
-	print('
-<style>#styled { 
-    padding:0;
-    margin:0;
-background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-background-size: 1800% 1800%;
-
--webkit-animation: rainbow 18s ease infinite;
--z-animation: rainbow 18s ease infinite;
--o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;}
-
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-</style>
-');
-} ?>
   <style>
     #c4-header-bg-container {
     background-image: url(/ytd/banner/<?php echo $uid; ?>.png);
     background-position: center 0px;
+  }
+  #textfield-desc {
+	  width: 600px;
+	  height: 130px;
+	  margin-bottom: 10px;
+	  margin-top: 0.1px;
   }
 
   </style>
@@ -244,7 +213,19 @@ function uploadFile(type) {
     
     <ul id="channel-navigation-menu" class="clearfix">
       <li>
-          <a href="/web/20121221231940/https://www.youtube.com/blogs/destructoid-elephant/feed" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-empty" aria-label="Feed"><img class="yt-uix-button-icon yt-uix-button-icon-c4-home-feed" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></a>
+          <button type="button" class="epic-nav-item-empty yt-uix-button <?php if(!isset($_GET['page']) || (isset($_GET['page']) && $page == "feed")) { ?>selected<?php } ?> yt-uix-button-epic-nav-item yt-uix-button-empty" onclick=";return false;" data-button-menu-id="channel-navigation-menu-dropdown" role="button" aria-label="Select view:"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-c4-home" src="//web.archive.org/web/20121226175335im_/http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt=""><span class="yt-uix-button-valign"></span></span><img class="yt-uix-button-arrow" src="//web.archive.org/web/20121226175335im_/http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+		  <div id="channel-navigation-menu-dropdown" class="epic-nav-item-dropdown yt-uix-button-menu yt-uix-button-menu-external hid" style="min-width: 38px; left: 246px; top: 370px; display: none;">
+    <ul>
+          <li>
+    <a class="spf-link yt-uix-button-menu-item" href="/user/<?php echo $user[0]; ?>">Browse</a>
+  </li>
+
+        <li>
+    <a class="spf-link yt-uix-button-menu-item" href="/user/<?php echo $user[0]; ?>/feed">Feed</a>
+  </li>
+
+    </ul>
+  </div>
       </li>
       <li>
 	  <?php if(isset($_GET['page']) && $page == "videos") { ?>
@@ -272,7 +253,7 @@ function uploadFile(type) {
 if(isset($_GET['page']) && $page == "videos") { require_once("yts/modbin/channel_videos.php");  } 
 else if(isset($_GET['page']) && $page == "about") { require_once("yts/modbin/channel_about.php"); }
 else if(isset($_GET['page']) && $page == "feed") { require_once("yts/modbin/channel_feed.php"); }
-else { require_once("channel_1.php"); }
+else { require_once("yts/modbin/channel_browse.php"); }
 	?>
 
       </div>
@@ -293,6 +274,14 @@ else { require_once("channel_1.php"); }
     yt.www.guide.init();
 
   </script>
+
+  <script>
+    yt.setConfig('CHANNEL_ID', "HC7Dr1BKwqctY");
+    yt.setAjaxToken('channel_ajax', "");
+    yt.pubsub.subscribe('init', yt.www.brandedpage.channels4init.generalInit);
+    yt.pubsub.subscribe('dispose', yt.www.brandedpage.channels4init.generalDispose);
+  </script>
+  
 </body>
 
 </html>

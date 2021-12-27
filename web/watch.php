@@ -822,7 +822,7 @@ Turn off converted 3D
     </h1> </div>
 								<div id="watch7-user-header"><a href="/user/<?php echo $getuname; ?>?feature=watch" class="yt-user-photo ">
 								<span class="video-thumb ux-thumb yt-thumb-square-48 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/ytd/pfp/<?php echo $video_info['uid']; ?>.gif?<?php echo date("His"); ?>" alt="<?php echo $getuname; ?>" width="48"><span class="vertical-align"></span></span></span></span></a><a href="/user/<?php echo $getuname; ?>?feature=watch" class="yt-uix-sessionlink yt-user-name " 
-								dir="ltr"><?php echo $getuname; ?></a><span class="yt-user-separator">&middot;</span><a class="yt-uix-sessionlink yt-user-videos" href="/user/<?php echo $getuname; ?>/videos"><?php echo $initvid->get_user_video($video_info['uid']); ?> videos</a>
+								dir="ltr"><?php echo $getuname; ?></a><span class="yt-user-separator">&middot;</span><a class="yt-uix-sessionlink yt-user-videos" href="/user/<?php echo $getuname; ?>/videos"><?php echo $initvid->get_user_numvideo($video_info['uid']); ?> videos</a>
 									<br>
 									<?php if($owner == 1) { ?>
 									<span class="yt-uix-button-subscription-container yt-uix-button-context-light">  <button type="button" class="yt-subscription-button  yt-uix-button yt-uix-button-hh-default yt-uix-tooltip" disabled="True" onclick=";return false;" title="No need to subscribe to yourself!" role="button" data-tooltip-text="No need to subscribe to yourself!"><span class="yt-uix-button-content">Subscribe </span></button>
@@ -988,11 +988,30 @@ Unlisted
 								
 								<div id="watch7-discussion">
 								
+									<div id="comments-view" data-type="highlights" class="">	
+									<?php if(!isset($_COOKIE['sessionuser'])) { ?>	
 									<div class="comments-post-container clearfix">
-									
-										<div class="comments-post-alert"> <a href="https://web.archive.org/web/20121218053625/https://accounts.google.com/ServiceLogin?passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dcomments%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253DBKEL4cUTOI4%2526gl%253DUS%2526hl%253Den%26nomobiletemp%3D1&amp;uilel=3&amp;hl=en_US&amp;service=youtube">Sign In</a> or <a href="/web/20121218053625/http://www.youtube.com/signup?next=%2Fwatch%3Fv%3DBKEL4cUTOI4%26gl%3DUS%26hl%3Den">Sign Up</a><span class="comments-post-form-rollover-text"> now to post a comment!</span> </div>
+										<div class="comments-post-alert"> <a href="sign_in">Sign In</a> or <a href="sign_up">Sign Up</a><span class="comments-post-form-rollover-text"> now to post a comment!</span> </div>
 									</div>
-									<div id="comments-view" data-type="highlights" class="">
+									<?php } else {?>			
+<form class="comments-post has-focus" method="post" action="/comment_servlet?add_comment=1" data-initialized="true">
+<div class="comments-post-container clearfix">
+<p style="float: left;"> 
+      <span class="video-thumb ux-thumb yt-thumb-square-48 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https:/yts/img/pixel-vfl3z5WfW.gif" data-thumb="/ytd/pfp/fsfds.png" width="48"><span class="vertical-align"></span></span></span></span>
+</p>
+<div class="comments-textarea-container">
+
+<img src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" class="comments-textarea-tip">
+<textarea id="" placeholder="Share your thoughts..." class="yt-uix-form-input-textarea comments-textarea link-gplus-lightbox" onfocus="yt.www.comments.initForm(this, false, false);" data-upsell="comment" name="comment"></textarea>
+</div> 
+<p class="comments-remaining has-focus" data-max-count="500">500</p>
+<div class="comments-post-buttons has-focus">
+<span class="comments-post-video-response-link"><a href="/video_response_upload?v=KvDfdCqjtXg">Create a video response</a>&nbsp;or&nbsp;</span>
+<button onclick=";return true;" type="submit" class=" yt-uix-button yt-uix-button-hh-default" role="button"><span class="yt-uix-button-content">Post</span></button>
+</div>
+	</div>
+  </form>
+  <?php } ?>
 										<div class="comments-section">
 											<h4>
         <a class="comments-section-see-all" href="//web.archive.org/web/20121218053625/http://www.youtube.com/video_response_view_all?v=BKEL4cUTOI4">
@@ -1189,7 +1208,7 @@ by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span cl
   </script>
 <script>
       yt.setConfig({
-      'PLAYER_CONFIG': {"assets": {"css_actions": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-actions-vflJeCcsD.css", "css": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-vfl4CRo3S.css", "js": "\/\/s.ytimg.com\/yts\/jsbin\/html5player-vfl1tXJkL.js"}, "url": "/yts/swfbin/player.swf", "min_version": "8.0.0", "args": {"title": "<?php echo $video_info['vtitle']; ?>", "iurl": "<?php echo 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['v'] . '.png'; ?>", "fexp": "914501,910020,916806,914083,916612,922401,920704,912806,927201,922403,925003,913546,913556,916805,920201,901451", "hl": "bg_BG", "is_html5_mobile_device": false, "video_id": "<?php echo $_GET['v']; ?>", "sendtmp": "1", "enablejsapi": "1", "sk": "_yFl1XD2EZMiFxul0uLtvQREHflJoPC5C", "rel": "0", "cr": "US", "playlist_module": "\/\/s.ytimg.com\/yts\/swfbin\/playlist_module-vflWjYGOe.swf", "length_seconds": 024}, "url_v9as2": "/yts/swfbin/player2.swf", "params": {"allowscriptaccess": "always", "allowfullscreen": "true", "bgcolor": "#000000"}, "attrs": {"width": "100%", "id": "video-player", "height": "100%"}, "url_v8": "/yts/swfbin/player2.swf", "html5": false},
+      'PLAYER_CONFIG': {"assets": {"css_actions": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-actions-vflJeCcsD.css", "css": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-vfl4CRo3S.css", "js": "\/\/s.ytimg.com\/yts\/jsbin\/html5player-vfl1tXJkL.js"}, "url": "/yts/swfbin/player.swf", "min_version": "8.0.0", "args": {"title": "<?php echo $video_info['vtitle']; ?>", "iurl": "<?php echo 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['v'] . '.png'; ?>", "fexp": "914501,910020,916806,914083,916612,922401,920704,912806,927201,922403,925003,913546,913556,916805,920201,901451", "hl": "bg_BG", "is_html5_mobile_device": false, "video_id": "<?php echo $_GET['v']; ?>", "sendtmp": "1", "enablejsapi": "1", "sk": "_yFl1XD2EZMiFxul0uLtvQREHflJoPC5C", "rel": "0", "cr": "US", "playlist_module": "\/\/s.ytimg.com\/yts\/swfbin\/playlist_module-vflWjYGOe.swf", "length_seconds": 024}, "url_v9as2": "/yts/swfbin/player2.swf", "params": {"allowscriptaccess": "always", "allowfullscreen": "true", "bgcolor": "#000000"}, "attrs": {"width": "100%", "id": "video-player", "height": "100%"}, "url_v8": "/yts/swfbin/player2.swf", "html5": true},
     'EMBED_HTML_TEMPLATE': "\u003ciframe width=\"__width__\" height=\"__height__\" src=\"__url__\" frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e",
     'EMBED_HTML_URL': "https:\/\/web.archive.org\/web\/20121111044940\/http:\/\/www.youtube.com\/embed\/__videoid__"
   });
