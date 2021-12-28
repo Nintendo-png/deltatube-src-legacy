@@ -43,7 +43,7 @@ yt.setConfig({
 		"args": {
 			"view_count": 253417,
 			"cbrver": "10.0",
-			"iurl": "<?php echo '/' . $_GET['v'] . '.png'; ?>",
+			"iurl": "<?php echo 'https://jark.succulent64.ml/ytd/thumb/' . $_GET['v'] . '.png'; ?>",
 			"c": "WEB",
 			"is_html5_mobile_device": false,
 			"enablecastapi": "0",
@@ -57,7 +57,7 @@ yt.setConfig({
 			"fexp": "9405966,9416126,9416891,9422596,9422841,9423194,9423964,9428092,9428398,9431012,9431270,9431449,9432684,9433096,9433425,9433776,9433946,9434801,9435243,9435701,9435853,9436005,9436447,9436617",
 			"cr": "EN",
 			"innertube_api_version": "v1",
-			"iurlmq": "<?php echo '/' . $_GET['v'] . '.png'; ?>",
+			"iurlmq": "<?php echo 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['v'] . '.png'; ?>",
 			"watch_xlb": "http:\/\/web.archive.org\/web\/20160516225752\/https:\/\/s.ytimg.com\/yts\/xlbbin\/watch-strings-fr_FR-vflLrnVnk.xlb",
 			"apiary_host": "/",
 			"index": "0",

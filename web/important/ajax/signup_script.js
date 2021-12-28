@@ -27,8 +27,12 @@ function signup_Validator()
 	if(password_1.value == password_2.value) {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    if(this.responseText > 0) {
+    if(this.responseText == 1) {
 			alert("This username has been used.");
+		signup_button.value='Sign Up';
+	signup_button.removeAttribute('disabled');
+	} else if(this.responseText == 3) {
+			alert("Username is not allowed. Please type in a different username.");
 		signup_button.value='Sign Up';
 	signup_button.removeAttribute('disabled');
 	} else {

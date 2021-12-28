@@ -45,9 +45,6 @@
 		<li> <a class="yt-nav-item" href="/dev">
         Developers
     </a> </li>
-		<li> <a class="yt-nav-item" href="//web.archive.org/web/20121221224625/https://support.google.com/youtube/?hl=en-US">
-        Help
-    </a> </li>
 	</ul>
 </div>
 <div id="alerts" class="about-pages"></div>
@@ -97,41 +94,20 @@ Getting Started
 									<div class="steps-text">
 										<h2>Watch videos</h2>
 										<ul class="disc">
-											<li>Look at the index page.</li>
+											<li>Find videos on what to watch or your subscription feed.</li>
 											<li>Click on the browse page.</li>
+											<li>Share it on the <a href="/t/about_jarktube_discord">JarkTube Discord</a> for other people to find and maybe a staff member will feature it.</li>
+												<li>Subscribe to receive new videos in your feeds.</li>
 										</ul>
-										<div class="grey-rounded-box tip">
-											<h3 class="no-padding">Tip: Want other browsing options?</h3>
-											<ul class="disc no-padding-bottom">
-												<li>Once you're on a category page, filter the results further by popularity and date range.</li>
-												<li>Visit <a href="https://web.archive.org/web/20121221224625/http://www.youtube.com/charts" target="_blank">YouTube Charts</a> to see a ranked list of popular videos.</li>
-											</ul>
-										</div>
-										<div class="grey-rounded-box tip">
-											<h3 class="no-padding">Tip: Found a video you like?</h3>
-											<ul class="disc no-padding-bottom">
-												<li>Click Like and add it to your Favorites so you can easily find it in your account.</li>
-												<li>Share it with your friends on Twitter, Facebook, or other social networks.</li>
-												<li>Subscribe to receive automatic updates from the channel.</li>
-											</ul>
-										</div>
 									</div>
 								</div>
 								<div class="steps-item heading-spacer"> <img src="/yts/img/marketing/circle-3-vflXcq0gf.jpg" class="steps-img" alt="step 3 icon">
 									<div class="steps-text">
 										<h2>Upload a video</h2>
 										<ul class="disc">
-											<li>Upload a file from your computer or record a video using your phone or webcam.</li>
-											<li>Customize your channel's appearance.</li>
+											<li>Upload a file from your computer.</li>
+											<li>Most file formats work, and the player quality is set to 1080p by default</li>
 										</ul>
-										<div class="grey-rounded-box tip"> <img src="//web.archive.org/web/20121221224625im_/https://s.ytimg.com/yts/img/marketing/image-edit-video-vflQ2NktM.png" class="screenshot">
-											<h3 class="no-padding">Tip: For best results, complete the Settings and Info sections for your video.</h3>
-											<ul class="disc no-padding-bottom">
-												<li>Share your video publicly or use private sharing to control who can watch it.</li>
-												<li>Include relevant keywords in the Tags section and select the appropriate category.</li>
-												<li>Give the video an accurate title and description to help people discover it.</li>
-											</ul>
-										</div>
 									</div>
 								</div>
 							</div>

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^jark.succulent64.ml$ [NC]
+RewriteRule ^(.*)$ http://jark.succulent64.ml/$1 [L,R]

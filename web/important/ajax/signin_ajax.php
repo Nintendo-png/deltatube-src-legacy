@@ -6,7 +6,8 @@
 	  //user verification
 	 $pass = password_hash($_POST['Passwd'], PASSWORD_DEFAULT);
 	 $hash = $thing->get_hash($_POST['username']);
-	 if(password_verify($_POST['Passwd'], $hash)) {
+	 if(password_verify($_POST['Passwd'], $hash) ) {
+		 if($thing->get_flag($_POST['username']) < 1) {
 		 $keys = array();
 		 $keys['samesite'] = "Lax";
 		 $keys['path'] = "/";
@@ -18,6 +19,9 @@
 			setcookie("sessionuser", $_POST['username'], $keys);
 		 }
 		 echo 1;
+		 } else {
+			 echo 3;
+		 }
 	 } else {
 		 echo 0;
 	 }

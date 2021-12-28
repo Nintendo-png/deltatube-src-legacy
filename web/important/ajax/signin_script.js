@@ -21,6 +21,11 @@ function signin_Validator()
 		  xhttp.onload = function() {
     if(this.responseText == 1) {
 		window.location.href = "/";
+	} else if(this.responseText == 3) { 
+	alert("You are banned!");
+					signin_button.value='Sign In';
+	                signin_button.removeAttribute('disabled');
+					return;
 	} else {
 		alert("Invalid Username or Password.");
 					signin_button.value='Sign In';
