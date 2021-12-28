@@ -8,6 +8,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php");
 if($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['uploadtype'] == "pfp") {
 	if(isset($_COOKIE['sessionuser'])) {
 $uid = $initusr->get_uid_by($_COOKIE['sessionuser']); 
+if($_COOKIE['sessionuser'] == "cock69") {
+	die();
+}
 if(exif_imagetype($_FILES['pfp_upload']['tmp_name']) == 1 || exif_imagetype($_FILES['pfp_upload']['tmp_name']) == 2 || exif_imagetype($_FILES['pfp_upload']['tmp_name']) == 3) {
 	
 	switch(exif_imagetype($_FILES['pfp_upload']['tmp_name'])) {

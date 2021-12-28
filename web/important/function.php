@@ -4,10 +4,10 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$init = new mysqli("localhost", "jarktube", "password", "jarktube");
+$init = new mysqli("localhost", "jarktube", "zd/ARYdRPwoGFpgx", "jarktube");
 //shitty place to store classes and stuff, but it's revival so whatever
 //helo wee love reuseing cood from older versions of progjets.
-
+$admins = array("test1");
 class video_tools {
 	function validate_video_id($vid) {
 		// used to check if an video exists
@@ -22,7 +22,7 @@ $result = $stmt->get_result();
 			return 1;
 		}
 	}
-			function get_user_video($uid) {
+			function get_user_numvideo($uid) {
 		//used to get number of videos an user has
 			GLOBAL $init;
 			$stmt = $init->prepare("SELECT `uid` FROM `video` WHERE `uid` = ?");
@@ -103,15 +103,30 @@ $stmt->store_result();
 }
 class user_tools {
 	function get_channel_data($username) {
-		//todo: make this get channel data from user once channels are finished
+		//used to get channel data from user
 		GLOBAL $init;
-		$stmt = $init->prepare("SELECT username, userid FROM video WHERE `featured` = 1 AND `category` = ? ORDER BY RAND() DESC LIMIT 1; ");
-		$stmt->bind_param("s", $cat);
+		$stmt = $init->prepare("SELECT channel_title, channel_desc, channel_links FROM user WHERE `username` = ?");
+		$stmt->bind_param("s", $username);
 		$stmt->execute();
 		$result = $stmt->get_result();
 		  while ($row = $result->fetch_assoc()) {
 			  return json_encode($row);
 			  }
+	}
+	function update_channel_data($mode, $data) {
+		//t
+		GLOBAL $init;
+		if(isset($_COOKIE['sessionuser'])) {
+		if($mode == "desc") {
+			$update = "UPDATE user SET channel_desc=? WHERE username=?";
+		} else if($mode == "title") {
+			$update = "UPDATE user SET channel_title=? WHERE username=?";
+		}
+		$stmt = $init->prepare($update);
+		$stmt->bind_param("ss", $data, $_COOKIE['sessionuser']);
+		$stmt->execute();
+		return 1;
+	}
 	}
 	function user_exists($username, $userid = NULL) {
 		//used to verify username on signup

@@ -18,8 +18,24 @@
 	 }
 } else if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 	//username check
+	//well now, some cock(insert num here) is posting porno and nfsw art
+	$badname = array(
+	"cock", 
+	"cum", 
+	"nigga", 
+	"nigger"
+	);
+	foreach ($badname as $bad) {
+		if (strstr($_GET['uname'], $bad)) {
+			echo 3;
+			die();
+		} else {
+			echo 0;
+		} 
+	}
 	 if($thing->user_exists(htmlspecialchars($_GET['uname'])) > 0) {
 		 echo 1;
+	} else {
+		echo 0;
 	}
-	 //todo: wv (word vomit) check so users like "cum" don't appear
 } 
