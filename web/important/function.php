@@ -242,6 +242,43 @@ if($result->num_rows > 0) {
 		}
 	   }
 	 class general_tools {
+		 	function get_all($users = NULL, $videos = NULL) {
+		//used to get all in jarktube
+			GLOBAL $init;
+			if(!is_null($users)) {
+				switch ($users) {
+					case "banned":
+					$check = "SELECT username FROM user WHERE flag=1";
+					break;
+					default:
+					$check = "SELECT username FROM user";
+					break;
+				}
+			}
+			if(!$videos == NULL) {
+				switch ($videos) {
+					case "public":
+					$check = "SELECT `video_type` FROM video WHERE `video_type` = 'public'";
+					break;
+					case "unlisted":
+					$check = "SELECT `video_type` FROM video WHERE `video_type` = 'unlisted'";
+					break;
+					case "private":
+					$check = "SELECT `video_type` FROM video WHERE `video_type` = 'private'";
+					break;
+					case "views":
+					$check = "SELECT `viewid` FROM views";
+					break;
+					default:
+					$check = "SELECT `vtitle` FROM video";
+					break;
+				}
+			}
+		$stmt = $init->prepare($check);
+		$stmt->execute();
+$result = $stmt->get_result();
+		  return $result->num_rows;
+	}
 	function get_to_ytdate($date) {
 		date_default_timezone_set("America/New_York");
 		$today = date("mdY");

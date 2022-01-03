@@ -13,7 +13,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php");
 	'channel_logo_url' => '/ytd/pfp/' . $video_info['uid'] . '.gif',
 	'username' => htmlspecialchars($uname),
 	'subscriber_count' => '10,463,231',
-	'subscription_button_html' => '<span class=\" yt-uix-button-subscription-container\" ><button type=\"button\" class=\"yt-uix-subscription-button yt-uix-button yt-uix-button-subscribe-branded yt-uix-button-size-default\" aria-live=\"polite\" aria-busy=\"false\" onclick=\";return false;\" aria-role=\"button\" data-channel-external-id=\"UCBR8-60-B28hp2BmDPdntcQ\" data-style-type=\"branded\" data-sessionlink=\"feature=html5-player&amp;ei=mXUPUtbaDOOQhgGv14H4Ag\" role=\"button\">    <span class=\"yt-uix-button-icon-wrapper\">\n      <img class=\"yt-uix-button-icon yt-uix-button-icon-subscribe\" src=\"//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif\" alt=\"\" title=\"\">\n      <span class=\"yt-uix-button-valign\"></span>\n    </span>\n    <span class=\"yt-uix-button-content\">\n<span class=\"subscribe-label\" aria-label=\"Subscribe\">Subscribe</span><span class=\"subscribed-label\" aria-label=\"Unsubscribe\">Subscribed</span><span class=\"unsubscribe-label\" aria-label=\"Unsubscribe\">Unsubscribe</span> \n    </span>\n</button><span class=\"yt-subscription-button-subscriber-count-branded-horizontal\" >10M</span>  <span class=\"yt-subscription-button-disabled-mask\" title=\"\"></span>\n</span>',
 	'image_url' => '/ytd/pfp/' . $video_info['uid'] . '.gif',
 	'public_name' => 'YouTube',
 	'channel_title' => 'YouTube Spotlight',

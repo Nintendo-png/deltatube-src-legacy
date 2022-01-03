@@ -1,0 +1,3 @@
+Javascript rules (so I don't rage because of it not working):
+1: Everything is CASE SENSITIVE
+2: Excution times count, because js is frontend

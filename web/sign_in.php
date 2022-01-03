@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php"); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php"); 
+if(isset($_COOKIE['sessionuser'])) {
+	header("Location: /");
+}
+?>
   <meta charset="utf-8">
   <title>JarkTube</title>
   <link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">

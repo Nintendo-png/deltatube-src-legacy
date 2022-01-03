@@ -30,9 +30,8 @@
 	      <link id="css-699966100" rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-watch-inlineedit-vflg-l3kd.css">	   
 		  <script id="js-528919983" src="/yts/jsbin/www-core-vflG1GmWt.js" data-loaded="true"></script>
       <link id="css-1181818654" rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-watch-transcript-vfl-zKZyz.css">    
-    <script id="js-1886910086" src="//s.ytimg.com/yts/jsbin/www-watch7-core-vflzdEjU1.js" data-loaded="true"></script>
-	    <script id="js-3637430272" src="//s.ytimg.com/yts/jsbin/html5player-vflppn5jI.js" data-loaded="true"></script>
-    <script id="js-3637430272" src="//s.ytimg.com/yts/jsbin/www-embed_core_module-vfl3edHYR.js" data-loaded="true"></script>
+	    <script id="js-3637430272" src="/yts/jsbin/html5player-vflppn5jI.js" data-loaded="true"></script>
+    <script id="js-3637430272" src="/yts/jsbin/www-embed_core_module-vfl3edHYR.js" data-loaded="true"></script>
 
 <meta property="og:url" content="https://jark.succulent64.ml/watch?v=<?php echo $_GET['v']; ?>">
     <meta property="og:title" content="<?php echo $video_info['vtitle']; ?>">
@@ -174,13 +173,8 @@ if (window.yt.timing) {yt.timing.tick("bf");}    </script>
     <button type="button" class="action-panel-trigger  yt-uix-button-toggled yt-uix-button yt-uix-button-hh-text yt-uix-tooltip" onclick=";return false;" title="" data-button-toggle="true" data-trigger-for="action-panel-details" role="button"><span class="yt-uix-button-content">About </span></button>
 										</span> <span>
     <button type="button" class="action-panel-trigger   yt-uix-button yt-uix-button-hh-text yt-uix-tooltip" onclick=";return false;" title="" data-button-toggle="true" data-trigger-for="action-panel-share" role="button"><span class="yt-uix-button-content">Share </span></button>
-										</span> <span class="yt-uix-clickcard">
-    <button type="button" class="action-panel-trigger   yt-uix-clickcard-target yt-uix-button yt-uix-button-hh-text yt-uix-tooltip" onclick=";return false;" title="" data-button-toggle="true" data-trigger-for="action-panel-none" data-position="bottomleft" data-orientation="vertical" data-upsell="playlist" role="button"><span class="yt-uix-button-content">Add to </span></button>
-										<div class="watch7-hovercard yt-uix-clickcard-content">
-											<h3 class="watch7-hovercard-header">Sign in to JarkTube</h3>
-											<div class="watch7-hovercard-message">Sign in to like <span class="yt-user-name " dir="ltr">TerminalMontage</span>'s video. </div>
-											<div class="watch7-hovercard-account-line"> <a href="/sign_in" class="yt-uix-button yt-uix-sessionlink yt-uix-button-hh-primary"><span class="yt-uix-button-content">Sign in</span></a> </div>
-										</div>
+										</span> <span>
+    <button type="button" class="action-panel-trigger   yt-uix-button yt-uix-button-hh-text yt-uix-tooltip" onclick=";return false;" title="" data-button-toggle="true" data-trigger-for="action-panel-addto" role="button"><span class="yt-uix-button-content">Add To </span></button>
 										</span> <span>
     <button type="button" class="action-panel-trigger   yt-uix-button yt-uix-button-hh-text yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="Statistics" data-button-toggle="true" data-trigger-for="action-panel-stats" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-action-panel-stats" src="/yts/img/pixel-vfl3z5WfW.gif" alt="Statistics"><span class="yt-uix-button-valign"></span></span>
 										</button>
@@ -288,7 +282,7 @@ Unlisted
 											</div>
 										</div>
 										<div id="action-panel-login" class="action-panel-content hid">
-											<div class="action-panel-login"> <a href="https://web.archive.org/web/20121218053625/https://accounts.google.com/ServiceLogin?passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253DBKEL4cUTOI4%2526gl%253DUS%2526hl%253Den%26nomobiletemp%3D1&amp;uilel=3&amp;hl=en_US&amp;service=youtube" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-hh-default" data-sessionlink="ei=CN-Exuido7QCFcLcRAodRhCc_g%3D%3D"><span class="yt-uix-button-content">Sign in</span></a> <a href="/web/20121218053625/http://www.youtube.com/signup?next=%2Fwatch%3Fv%3DBKEL4cUTOI4%26gl%3DUS%26hl%3Den" class="yt-uix-button-alert-link">Sign up</a> </div>
+											<div class="action-panel-login"> <a href="/sign_in" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-hh-default"><span class="yt-uix-button-content">Sign in</span></a> <a href="/sign_up" class="yt-uix-button-alert-link">Sign up</a> </div>
 										</div>
 										<div id="action-panel-ratings-disabled" class="action-panel-content hid">
 											<div id="watch-actions-ratings-disabled" class="watch-actions-panel hid"> <em>Ratings have been disabled for this video.</em> </div>
@@ -339,13 +333,13 @@ Unlisted
   </h4>
 											<ul class="video-list">
 												<li class="video-response">
-													<a href="/web/20121218053625/http://www.youtube.com/watch?v=zUrqoI-vA8U" class="yt-uix-contextlink yt-uix-sessionlink" data-sessionlink="ei=CN-Exuido7QCFcLcRAodRhCc_g%3D%3D&amp;feature=watch_response"> <span class="video-thumb ux-thumb yt-thumb-default-76 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="//web.archive.org/web/20121218053625im_/http://i3.ytimg.com/vi/zUrqoI-vA8U/default.jpg" alt="Thumbnail" width="76"><span class="vertical-align"></span></span>
+													<a href="/watch?v=" class="yt-uix-contextlink yt-uix-sessionlink"> <span class="video-thumb ux-thumb yt-thumb-default-76 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/ytd/thumb/dfdsa.jpg" alt="Thumbnail" width="76"><span class="vertical-align"></span></span>
 														</span>
 														</span> <span dir="ltr" class="title" title="Zubatman The Animated Series HD Teaser">
-          Zubatman The Animated Series HD Teaser
+         title
         </span> <span class="stat attribution">
-by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span class="stat view-count">
-            251,737 views
+by <span class="yt-user-name " dir="ltr">user</span> </span> <span class="stat view-count">
+            0 views
           </span> </a>
 												</li>
 											</ul>
@@ -362,76 +356,14 @@ by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span cl
 						
 											<div id="live-comments-setting-no-scroll" class="live-comments-setting hid"> <a onclick="yt.www.watch.livecomments.setScroll(false); return false;">Disable automatic updates</a> </div>
 											<ul class="comment-list" id="live_comments">
-												<li class="clearfix comment" data-author-id="xO5UVPDZ9Uehnp5dp3cjbw" data-id="1B9wo-RV1jGL1RTIZJte6lQp6A0nL0t10Qv5DafLM3k">
-													<button type="button" class="flip close yt-uix-button yt-uix-button-link yt-uix-button-empty" onclick=";return false;" data-button-has-sibling-menu="true" role="button" aria-pressed="false" aria-expanded="false" aria-haspopup="true" aria-activedescendant=""><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-comment-close" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""><span class="yt-uix-button-valign"></span></span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt="">
-														<div class=" yt-uix-button-menu yt-uix-button-menu-link" style="display: none;">
-															<ul>
-																<li class="comment-action-remove comment-action" data-action="remove"><span class="yt-uix-button-menu-item">Remove</span></li>
-																<li class="comment-action" data-action="flag-profile-pic"><span class="yt-uix-button-menu-item">Report profile image</span></li>
-																<li class="comment-action" data-action="flag"><span class="yt-uix-button-menu-item">Flag for spam</span></li>
-																<li class="comment-action-block comment-action" data-action="block"><span class="yt-uix-button-menu-item">Block User</span></li>
-																<li class="comment-action-unblock comment-action" data-action="unblock"><span class="yt-uix-button-menu-item">Unblock User</span></li>
-															</ul>
-														</div>
-													</button> <a href="/web/20121218053625/http://www.youtube.com/user/xtzyshuadog" class="yt-user-photo "><span class="video-thumb ux-thumb yt-thumb-square-48 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https:/yts/img/pixel-vfl3z5WfW.gif" alt="xtzyshuadog" data-thumb="//web.archive.org/web/20121218053625/http://i1.ytimg.com/i/xO5UVPDZ9Uehnp5dp3cjbw/1.jpg" width="48"><span class="vertical-align"></span></span></span></span></a>
-													<div class="comment-body">
-														<div class="content-container">
-															<div class="content">
-																<p class="metadata"> <span class="author ">
-            <a href="/web/20121218053625/http://www.youtube.com/user/xtzyshuadog" class="yt-uix-sessionlink yt-user-name " data-sessionlink="ei=CN-Exuido7QCFcLcRAodRhCc_g%3D%3D" dir="ltr">xtzyshuadog</a>
-          </span> <span class="time" dir="ltr">
-              <a dir="ltr" href="https://web.archive.org/web/20121218053625/http://www.youtube.com/comment?lc=1B9wo-RV1jGL1RTIZJte6lQp6A0nL0t10Qv5DafLM3k">
-                6 seconds ago
-              </a>
-            </span> </p>
-																<div class="comment-text" dir="ltr">
-																	<p>What the FLYING Fuck?﻿</p>
-																</div>
-															</div>
-															<div class="comment-actions">
-																<button type="button" class="start comment-action yt-uix-button yt-uix-button-link" onclick=";return false;" data-action="reply" role="button"><span class="yt-uix-button-content">Reply </span></button><span class="separator">&middot;</span><span class="yt-uix-button-group"><span class="yt-uix-clickcard"><button type="button" class="start comment-action-vote-up comment-action yt-uix-clickcard-target yt-uix-button yt-uix-button-link yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="" data-action="" data-tooltip-show-delay="300" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-watch-comment-vote-up" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""><span class="yt-uix-button-valign"></span></span>
-																</button>
-																<div class="watch7-hovercard yt-uix-clickcard-content">
-																	<h3 class="watch7-hovercard-header">Sign in to YouTube</h3>
-																	<div class="watch7-hovercard-message"> Sign in with your YouTube Account (YouTube, Google+, Gmail, Orkut, Picasa, or Chrome) to rate <span class="yt-user-name " dir="ltr">xtzyshuadog</span>'s comment. </div>
-																	<ul class="watch7-hovercard-icon-strip clearfix">
-																		<li class="watch7-hovercard-icon">
-																			<div class="watch7-hovercard-youtube-icon"></div>
-																		</li>
-																		<li class="watch7-hovercard-icon">
-																			<div class="watch7-hovercard-gplus-icon"></div>
-																		</li>
-																		<li class="watch7-hovercard-icon">
-																			<div class="watch7-hovercard-gmail-icon"></div>
-																		</li>
-																		<li class="watch7-hovercard-icon">
-																			<div class="watch7-hovercard-picasa-icon"></div>
-																		</li>
-																		<li class="watch7-hovercard-icon">
-																			<div class="watch7-hovercard-chrome-icon"></div>
-																		</li>
-																	</ul>
-																	<div class="watch7-hovercard-account-line"> <a href="https://web.archive.org/web/20121218053625/https://accounts.google.com/ServiceLogin?passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den_US%26next%3D%252Fwatch%253Fv%253DBKEL4cUTOI4%2526gl%253DUS%2526hl%253Den%26nomobiletemp%3D1&amp;uilel=3&amp;hl=en_US&amp;service=youtube" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-hh-primary"><span class="yt-uix-button-content">Sign in</span></a> </div>
-																</div>
-																</span><span class="yt-uix-clickcard"><button type="button" class="end comment-action-vote-down comment-action yt-uix-clickcard-target yt-uix-button yt-uix-button-link yt-uix-tooltip yt-uix-button-empty" onclick=";return false;" title="" data-action="" data-tooltip-show-delay="300" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-watch-comment-vote-down" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""><span class="yt-uix-button-valign"></span></span>
-																</button>
-																<div class="watch7-hovercard yt-uix-clickcard-content">
-																	<h3 class="watch7-hovercard-header">Sign in to JarkTube</h3>
-																	<div class="watch7-hovercard-message"> Sign in with your JarkTube Account to rate <span class="yt-user-name " dir="ltr">xtzyshuadog</span>'s comment. </div>		
-																	<div class="watch7-hovercard-account-line"> <a href="sign_in" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-hh-primary" ><span class="yt-uix-button-content">Sign in</span></a> </div>
-																</div>
-																</span>
-																</span>
-															</div>
-														</div>
-													</div>
-												</li>
+												
 												
 											</ul>
 										</div>
 										<div class="comments-section">
 											<div class="comments-pagination" data-ajax-enabled="true">
-												<div class="yt-uix-pager" role="navigation"> <a class="yt-uix-button  yt-uix-pager-button yt-uix-pager-show-more yt-uix-sessionlink yt-uix-button-hh-default" data-sessionlink="ei=CN-Exuido7QCFcLcRAodRhCc_g%3D%3D" data-page="2"><span class="yt-uix-button-content">Show more</span></a> </div>
+												<div class="yt-uix-pager" role="navigation"> <a class="yt-uix-button  yt-uix-pager-button yt-uix-pager-show-more yt-uix-sessionlink yt-uix-button-hh-default" 
+												data-page="2"><span class="yt-uix-button-content">Show more</span></a> </div>
 											</div>
 										</div>
 										<ul>
@@ -450,7 +382,8 @@ by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span cl
 								<div class="watch-sidebar-section">
 									<div class="watch-sidebar-body">
 										<ul id="watch-related" class="video-list">
-											<li class="video-list-item"> <a href="/web/20121218053625/http://www.youtube.com/watch?v=huNLM86t29c" class="related-video yt-uix-contextlink  yt-uix-sessionlink" data-sessionlink="ved=CAMQzRooAA%3D%3D&amp;ei=CN-Exuido7QCFcLcRAodRhCc_g%3D%3D&amp;feature=relmfu"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https:/yts/img/pixel-vfl3z5WfW.gif" alt="Pokemon Red: Rock Tunnel" data-thumb="/ytd/thumb/dfdsa.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">1:48</span>
+											<li class="video-list-item"> 
+											<a href="/web/20121218053625/http://www.youtube.com/watch?v=huNLM86t29c" class="related-video yt-uix-contextlink  yt-uix-sessionlink"><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Pokemon Red: Rock Tunnel" data-thumb="/ytd/thumb/dfdsa.jpg" width="120"><span class="vertical-align"></span></span></span></span><span class="video-time">1:48</span>
 
 
   <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="huNLM86t29c" role="button"><span class="yt-uix-button-content">  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
@@ -478,6 +411,7 @@ by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span cl
 	<link id="css-4115735524" rel="stylesheet" href="/yts/cssbin/www-hitchhiker-vflTcqmWD.css">
 	<link id="css-583125701" rel="stylesheet" href="/yts/cssbin/www-the-rest-vflzYVqky.css">	
 	<link id="css-3687597597" rel="stylesheet" href="/yts/cssbin/www-home-c4-vfl4MbzOD.css">	
+	
   <script>
     yt.setConfig({
       'WATCH_EXTRA_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-watch7-extra-vflu7ZK59.js",
@@ -486,7 +420,7 @@ by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span cl
         'WATCH_CONTEXT_CONTAINER_TEMPLATE': "\u003cdiv id=\"context-source-container\"data-context-source=\"__more_from__\"data-context-image=\"__image__\"style=\"display:none;\"\u003e\u003c\/div\u003e\u003cdiv class=\"__container_classes__\"\u003e\u003cdiv class=\"guide-module-toggle context-header\"\u003e\u003cspan class=\"guide-module-toggle-icon\"\u003e\u003cspan class=\"guide-module-toggle-arrow\"\u003e\u003c\/span\u003e\u003cimg src=\"\/\/s.ytimg.com\/yts\/img\/pixel-vfl3z5WfW.gif\" alt=\"\"\u003e\u003c\/span\u003e\u003ca class=\"context-back-link yt-uix-sessionlink\" href=\"__back_link__\" data-sessionlink=\"ei=CP-xg4ztmrQCFQnuRAodySQTmw%3D%3D\u0026amp;feature=__feature__\"\u003e\u003cspan class=\"guide-context-image-link\"\u003e\u003cspan class=\"thumb guide-context-image\"\u003e\u003cimg src=\"__image__\" alt=\"__more_from__\"\u003e\u003c\/span\u003e\u003c\/span\u003e\u003cdiv class=\"guide-module-toggle-label\"\u003e\u003ch3 class=\"context-title\"\u003e\u003cspan\u003e__headline__\u003cspan class=\"yt-badge-new\"\u003enew\u003c\/span\u003e\u003c\/span\u003e\u003c\/h3\u003e\u003cspan class=\"placeholder\" title=\"__more_from__\" dir=\"__title_dir__\"\u003e__more_from__\u003c\/span\u003e\u003c\/div\u003e\u003c\/a\u003e\u003c\/div\u003e\u003cdiv class=\"guide-module-content  hid\"\u003e\u003chr class=\"guide-section-separator guide-context-separator-top\"\u003e\u003cul id=\"watch-context-item-list\" class=\"guide-context-item-container context-data-container yt-uix-scroller guide-context-body\" data-context-playing=\"__click_index__\" data-context-open=\"true\" data-context-subsource=\"__subsource__\"\u003e__item_list__\u003c\/ul\u003e\u003chr class=\"guide-section-separator guide-context-separator-bottom\"\u003e\u003c\/div\u003e\u003c\/div\u003e",
         'WATCH_CONTEXT_VIDEO_TEMPLATE': "\u003cli class=\"guide-context-item context-data-item context-video yt-uix-scroller-scroll-unit __item_classes__\" data-context-item-actionverb=\"__action_verb__\" data-context-item-title=\"__video_title__\" data-context-item-type=\"video\" data-context-item-time=\"__video_time__\" data-context-item-user=\"__user_name__\" data-context-item-id=\"__video_id__\" data-context-item-views=\"__view_count__\" data-context-item-actionuser=\"__action_username__\"\u003e\u003ca href=\"\/watch?v=__video_id__\" class=\"yt-uix-contextlink yt-uix-sessionlink \" data-sessionlink=\"ei=CP-xg4ztmrQCFQnuRAodySQTmw%3D%3D\u0026amp;feature=__feature__\"\u003e\u003cspan class=\"video-thumb ux-thumb yt-thumb-default-40 context-video-thumb\"\u003e\u003cspan class=\"yt-thumb-clip\"\u003e\u003cspan class=\"yt-thumb-clip-inner\"\u003e\u003cimg src=\"\/\/i4.ytimg.com\/vi\/__video_id__\/default.jpg\" alt=\"Thumbnail\" width=\"40\" \u003e\u003cspan class=\"vertical-align\"\u003e\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003cspan class=\"title\"\u003e__video_title__\u003c\/span\u003e\u003cspan class=\"username\"\u003eby __user_name__\u003c\/span\u003e\u003cspan class=\"viewcount\"\u003e__view_count__\u003c\/span\u003e\u003cspan class=\"action\"\u003e__action_username__ __action_verb__\u003c\/span\u003e\u003c\/a\u003e\u003c\/li\u003e",
         'WATCH_CONTEXT_PLAYLIST_TEMPLATE': "\u003cli class=\"guide-context-item context-data-item context-playlist yt-uix-scroller-scroll-unit __item_classes__\" data-context-item-count-label=\"__video_count_label__\" data-context-item-actionverb=\"__action_verb__\" data-context-item-title=\"__playlist_title__\" data-context-item-type=\"playlist\" data-context-item-actionuser=\"__action_username__\" data-context-item-user=\"\u0026quot;__user_name__\u0026quot;\" data-context-item-count=\"__video_count__\" data-context-item-id=\"__playlist_id__\" data-context-item-videos=\"[\u0026quot;__playlist_video_id__\u0026quot;]\"\u003e\u003ca href=\"\/watch?v=__playlist_video_id__\u0026amp;playnext=1\u0026amp;list=__playlist_id__\" class=\"yt-uix-contextlink yt-uix-sessionlink \" data-sessionlink=\"ei=CP-xg4ztmrQCFQnuRAodySQTmw%3D%3D\u0026amp;feature=__feature__\"\u003e\u003cspan class=\"context-video-thumb yt-pl-thumb\"\u003e\u003cspan class=\"video-thumb ux-thumb yt-thumb-default-40 \"\u003e\u003cspan class=\"yt-thumb-clip\"\u003e\u003cspan class=\"yt-thumb-clip-inner\"\u003e\u003cimg src=\"\/\/i4.ytimg.com\/vi\/__playlist_video_id__\/default.jpg\" alt=\"Thumbnail\" width=\"40\" \u003e\u003cspan class=\"vertical-align\"\u003e\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e\u003c\/span\u003e  \u003cspan class=\"video-count-wrapper\"\u003e\n    \u003cspan class=\"video-count-block\"\u003e\n      \u003cspan class=\"count-label\"\u003e__video_count__\u003c\/span\u003e\n      \u003cspan class=\"text-label\"\u003e__video_count_label__\u003c\/span\u003e\n    \u003c\/span\u003e\n  \u003c\/span\u003e\n\u003c\/span\u003e\u003cspan class=\"title\"\u003e__playlist_title__\u003c\/span\u003e\u003cspan class=\"username\"\u003eby __user_name__\u003c\/span\u003e\u003cspan class=\"action\"\u003e__action_username__ __action_verb__\u003c\/span\u003e\u003c\/a\u003e\u003c\/li\u003e",
-      'WATCH7_ENABLED': true,
+      'WATCH7_ENABLED': false,
         'GUIDE_PROMO_ENABLED': false,
         'CONTEXT_PROMO_ENABLED': true,
       'GUIDE_ENABLED': true,
@@ -518,17 +452,12 @@ by <span class="yt-user-name " dir="ltr">TerminalMontage</span> </span> <span cl
         'WATCH_EDIT_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-watch-edit-vflt9h6St.js",
 	  <?php } ?>
       'REPORTVIDEO_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-reportvideo-vflik8cLN.js",
-      'REPORTVIDEO_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-watch7-reportvideo-vflFgjmTM.css",
-
-
-      'ENABLE_AUTO_LARGE': true,
-      'ENABLE_ASPECT_RATIO': false    });
-
-      yt.setAjaxToken('guide_channels_ajax', "QVfjIvx8t1Byhy5lG5_ClqYjPlp8MTM1NjgyODc2MkAxMzU2NzQyMzYy");
+      'REPORTVIDEO_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-watch7-reportvideo-vflFgjmTM.css"});
+	   yt.setConfig('ENABLE_AUTO_LARGE', true);
   </script>
 <script>
 yt.setConfig({
-      'PLAYER_CONFIG': {"min_version": "8.0.0", "html5": false, "url": "/yts/swfbin/watch_as3_hh-vfleHfpd4.swf", "attrs": {"id": "video-player", "width": "100%", "height": "100%"}, "params": {"allowscriptaccess": "always", "allowfullscreen": "true", "bgcolor": "#000000"}, "args": {"fexp": "907722,906062,910102,927104,922401,920704,912806,927201,913546,913556,925109,919003,920201,912706,900816", "ptk": "youtube_multi", "enablecsi": "1", "allow_embed": 1, "rvs": "", "vq": "auto", "account_playback_token": "", "autohide": "2", "csi_page_type": "watch5", "cr": "NL", "allow_ratings": 1, "length_seconds": 255, "is_html5_mobile_device": false, "rel": "1", "hl": "en_US", "playlist_module": "https:\/\/web.archive.org\/web\/20121221164608\/http:\/\/s.ytimg.com\/yts\/swfbin\/playlist_module-vflh5WbBc.swf", "title": "<?php echo $video_info['vtitle']; ?>", "tk": "o3_r7m6s_HAaFxeywi14S3qFcY4uSrEiWfZ8KVUoyEB_gj1rlrELuQ==", "iurl": "<?php echo 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['v'] . '.png'; ?>", "fexp": "914501,910020,916806,914083,916612,922401,920704,912806,927201,922403,925003,913546,913556,916805,920201,901451", "hl": "bg_BG", "is_html5_mobile_device": false, "video_id": "<?php echo $_GET['v']; ?>", "enablejsapi": "1", "video_wall": 1, "sendtmp": "1"}, "url_v9as2": "/yts/swfbin/player2.swf", "url_v8": "/yts/swfbin/player2.swf", "assets": {"html": "\/html5_player_template", "css_actions": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-actions-vflBv1HfX.css", "js": "\/\/s.ytimg.com\/yts\/jsbin\/html5player-vflppn5jI.js", "css": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-vfl95jqbw.css"}},
+      'PLAYER_CONFIG': {"min_version": "8.0.0", "html5": false, "url": "/yts/swfbin/watch_as3_hh-vfleHfpd4.swf", "attrs": {"id": "video-player", "width": "100%", "height": "100%"}, "params": {"allowscriptaccess": "always", "allowfullscreen": "true", "bgcolor": "#000000"}, "args": {"ptk": "youtube_multi", "enablecsi": "1", "allow_embed": 1, "rvs": "", "vq": "auto", "account_playback_token": "", "autohide": "2", "csi_page_type": "watch7", "cr": "NL", "allow_ratings": 1, "length_seconds": 255, "is_html5_mobile_device": false, "rel": "1", "hl": "en_US", "title": "<?php echo $video_info['vtitle']; ?>", "iurl": "<?php echo 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['v'] . '.png'; ?>", "fexp": "914501,910020,916806,914083,916612,922401,920704,912806,927201,922403,925003,913546,913556,916805,920201,901451", "hl": "bg_BG", "is_html5_mobile_device": false, "video_id": "<?php echo $_GET['v']; ?>", "enablejsapi": "1", "video_wall": 1, "sendtmp": "1"}, "url_v9as2": "/yts/swfbin/player2.swf", "url_v8": "/yts/swfbin/player2.swf", "assets": {"html": "\/html5_player_template", "css_actions": "/yts/cssbin/www-player-actions-vflBv1HfX.css", "js": "/yts/jsbin/html5player-vflppn5jI.js", "css": "/yts/cssbin/www-player-vfl95jqbw.css"}},
     'EMBED_HTML_TEMPLATE': "\u003ciframe width=\"__width__\" height=\"__height__\" src=\"__url__\" frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e",
     'EMBED_HTML_URL': "http:\/\/jark.succulent64.ml\/embed\/__videoid__"
   });
@@ -541,6 +470,7 @@ yt.setConfig({
       yt.embed.writeEmbed();
 	  yt.www.comments.initForm(this, true, false);
   </script>
+      <script id="js-1886910086" src="//s.ytimg.com/yts/jsbin/www-watch7-core-vflzdEjU1.js" data-loaded="true"></script>
 		</div>
 	<?php require_once("yts/modbin/footer.php"); ?>
 	

@@ -421,11 +421,101 @@
 											<div class="lohp-vertical-shelf">
 												<h2 class="lohp-shelf-title-header">
       <a class="spf-link lohp-shelf-title" href="/channel/HCPvDBPPFfuaM" title="News - Worldwide">
-          News - Worldwide
+          Gaming
       </a>
     </h2>
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
+											$getuname = $initusr->get_uname_by($feature['uid']); 
+											?>
+	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
+<div class="lohp-media-object"> 
+<a href="/watch?v=<?php echo $feature['rid']; ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto">
+<span class="video-thumb ux-thumb yt-thumb-default-64">
+<span class="yt-thumb-clip"><span class="yt-thumb-clip-inner">
+<img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/ytd/thumb/<?php echo $feature['rid']; ?>.png" width="67">
+<span class="vertical-align"></span>
+</span></span>
+</span>
+<span class="video-time"><?php echo $feature['vtime']; ?></span>
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $feature['rid']; ?>" role="button"><span class="yt-uix-button-content">  
+  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a> </div>
+<div class="lohp-vertical-shelf-item-content lohp-media-object-content"> 
+<a class="lohp-video-link max-line-3 yt-uix-sessionlink" href="/watch?v=<?php echo $feature['rid']; ?>" title="<?php echo htmlspecialchars($feature['vtitle']); ?>">
+<?php echo htmlspecialchars($feature['vtitle']); ?>
+</a>
+<div class="lohp-video-metadata attached"> 
+<span class="content-uploader">
+<span class="username-prepend">by</span> <a href="/user/<?php echo htmlspecialchars($getuname); ?>" class="yt-uix-sessionlink yt-user-name"  dir="ltr"><?php echo htmlspecialchars($getuname); ?></a> 
+</span>
+</div>
+</div>
+</div>
+<!-- end -->
+	<!-- start -->
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
+											$getuname = $initusr->get_uname_by($feature['uid']); 
+											?>
+	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
+<div class="lohp-media-object"> 
+<a href="/watch?v=<?php echo $feature['rid']; ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto">
+<span class="video-thumb ux-thumb yt-thumb-default-64">
+<span class="yt-thumb-clip"><span class="yt-thumb-clip-inner">
+<img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/ytd/thumb/<?php echo $feature['rid']; ?>.png" width="67">
+<span class="vertical-align"></span>
+</span></span>
+</span>
+<span class="video-time"><?php echo $feature['vtime']; ?></span>
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $feature['rid']; ?>" role="button"><span class="yt-uix-button-content">  
+  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a> </div>
+<div class="lohp-vertical-shelf-item-content lohp-media-object-content"> 
+<a class="lohp-video-link max-line-3 yt-uix-sessionlink" href="/watch?v=<?php echo $feature['rid']; ?>" title="<?php echo htmlspecialchars($feature['vtitle']); ?>">
+<?php echo htmlspecialchars($feature['vtitle']); ?>
+</a>
+<div class="lohp-video-metadata attached"> 
+<span class="content-uploader">
+<span class="username-prepend">by</span> <a href="/user/<?php echo htmlspecialchars($getuname); ?>" class="yt-uix-sessionlink yt-user-name"  dir="ltr"><?php echo htmlspecialchars($getuname); ?></a> 
+</span>
+</div>
+</div>
+</div>
+<!-- end -->
+	<!-- start -->
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
+											$getuname = $initusr->get_uname_by($feature['uid']); 
+											?>
+	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
+<div class="lohp-media-object"> 
+<a href="/watch?v=<?php echo $feature['rid']; ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto">
+<span class="video-thumb ux-thumb yt-thumb-default-64">
+<span class="yt-thumb-clip"><span class="yt-thumb-clip-inner">
+<img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/ytd/thumb/<?php echo $feature['rid']; ?>.png" width="67">
+<span class="vertical-align"></span>
+</span></span>
+</span>
+<span class="video-time"><?php echo $feature['vtime']; ?></span>
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $feature['rid']; ?>" role="button"><span class="yt-uix-button-content">  
+  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a> </div>
+<div class="lohp-vertical-shelf-item-content lohp-media-object-content"> 
+<a class="lohp-video-link max-line-3 yt-uix-sessionlink" href="/watch?v=<?php echo $feature['rid']; ?>" title="<?php echo htmlspecialchars($feature['vtitle']); ?>">
+<?php echo htmlspecialchars($feature['vtitle']); ?>
+</a>
+<div class="lohp-video-metadata attached"> 
+<span class="content-uploader">
+<span class="username-prepend">by</span> <a href="/user/<?php echo htmlspecialchars($getuname); ?>" class="yt-uix-sessionlink yt-user-name"  dir="ltr"><?php echo htmlspecialchars($getuname); ?></a> 
+</span>
+</div>
+</div>
+</div>
+<!-- end -->
+	<!-- start -->
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -465,7 +555,7 @@
     </h2>
 	
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -494,7 +584,98 @@
 </div>
 </div>
 <!-- end -->
-	
+	<!-- start -->
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
+											$getuname = $initusr->get_uname_by($feature['uid']); 
+											?>
+	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
+<div class="lohp-media-object"> 
+<a href="/watch?v=<?php echo $feature['rid']; ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto">
+<span class="video-thumb ux-thumb yt-thumb-default-64">
+<span class="yt-thumb-clip"><span class="yt-thumb-clip-inner">
+<img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/ytd/thumb/<?php echo $feature['rid']; ?>.png" width="67">
+<span class="vertical-align"></span>
+</span></span>
+</span>
+<span class="video-time"><?php echo $feature['vtime']; ?></span>
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $feature['rid']; ?>" role="button"><span class="yt-uix-button-content">  
+  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a> </div>
+<div class="lohp-vertical-shelf-item-content lohp-media-object-content"> 
+<a class="lohp-video-link max-line-3 yt-uix-sessionlink" href="/watch?v=<?php echo $feature['rid']; ?>" title="<?php echo htmlspecialchars($feature['vtitle']); ?>">
+<?php echo htmlspecialchars($feature['vtitle']); ?>
+</a>
+<div class="lohp-video-metadata attached"> 
+<span class="content-uploader">
+<span class="username-prepend">by</span> <a href="/user/<?php echo htmlspecialchars($getuname); ?>" class="yt-uix-sessionlink yt-user-name"  dir="ltr"><?php echo htmlspecialchars($getuname); ?></a> 
+</span>
+</div>
+</div>
+</div>
+<!-- end -->
+	<!-- start -->
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
+											$getuname = $initusr->get_uname_by($feature['uid']); 
+											?>
+	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
+<div class="lohp-media-object"> 
+<a href="/watch?v=<?php echo $feature['rid']; ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto">
+<span class="video-thumb ux-thumb yt-thumb-default-64">
+<span class="yt-thumb-clip"><span class="yt-thumb-clip-inner">
+<img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/ytd/thumb/<?php echo $feature['rid']; ?>.png" width="67">
+<span class="vertical-align"></span>
+</span></span>
+</span>
+<span class="video-time"><?php echo $feature['vtime']; ?></span>
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $feature['rid']; ?>" role="button"><span class="yt-uix-button-content">  
+  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a> </div>
+<div class="lohp-vertical-shelf-item-content lohp-media-object-content"> 
+<a class="lohp-video-link max-line-3 yt-uix-sessionlink" href="/watch?v=<?php echo $feature['rid']; ?>" title="<?php echo htmlspecialchars($feature['vtitle']); ?>">
+<?php echo htmlspecialchars($feature['vtitle']); ?>
+</a>
+<div class="lohp-video-metadata attached"> 
+<span class="content-uploader">
+<span class="username-prepend">by</span> <a href="/user/<?php echo htmlspecialchars($getuname); ?>" class="yt-uix-sessionlink yt-user-name"  dir="ltr"><?php echo htmlspecialchars($getuname); ?></a> 
+</span>
+</div>
+</div>
+</div>
+<!-- end -->	
+	<!-- start -->
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
+											$getuname = $initusr->get_uname_by($feature['uid']); 
+											?>
+	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
+<div class="lohp-media-object"> 
+<a href="/watch?v=<?php echo $feature['rid']; ?>" class="ux-thumb-wrap yt-uix-sessionlink yt-uix-contextlink contains-addto">
+<span class="video-thumb ux-thumb yt-thumb-default-64">
+<span class="yt-thumb-clip"><span class="yt-thumb-clip-inner">
+<img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb="/ytd/thumb/<?php echo $feature['rid']; ?>.png" width="67">
+<span class="vertical-align"></span>
+</span></span>
+</span>
+<span class="video-time"><?php echo $feature['vtime']; ?></span>
+  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions spf-nolink addto-watch-later-button-sign-in yt-uix-button yt-uix-button-hh-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="<?php echo $feature['rid']; ?>" role="button"><span class="yt-uix-button-content">  
+  <img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""></button>
+</a> </div>
+<div class="lohp-vertical-shelf-item-content lohp-media-object-content"> 
+<a class="lohp-video-link max-line-3 yt-uix-sessionlink" href="/watch?v=<?php echo $feature['rid']; ?>" title="<?php echo htmlspecialchars($feature['vtitle']); ?>">
+<?php echo htmlspecialchars($feature['vtitle']); ?>
+</a>
+<div class="lohp-video-metadata attached"> 
+<span class="content-uploader">
+<span class="username-prepend">by</span> <a href="/user/<?php echo htmlspecialchars($getuname); ?>" class="yt-uix-sessionlink yt-user-name"  dir="ltr"><?php echo htmlspecialchars($getuname); ?></a> 
+</span>
+</div>
+</div>
+</div>
+<!-- end -->	
+
+
 											</div>
 											<!-- end music shelve -->
 										</div>
