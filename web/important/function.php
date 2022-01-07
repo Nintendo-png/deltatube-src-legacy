@@ -4,7 +4,7 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$init = new mysqli("localhost", "jarktube", "zd/ARYdRPwoGFpgx", "jarktube");
+$init = new mysqli("localhost", "jarktube", "password", "jarktube");
 //shitty place to store classes and stuff, but it's revival so whatever
 //helo wee love reuseing cood from older versions of progjets.
 $admins = array("test1");
