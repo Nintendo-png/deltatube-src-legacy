@@ -279,10 +279,9 @@ if($result->num_rows > 0) {
 $result = $stmt->get_result();
 		  return $result->num_rows;
 	}
-	function get_to_ytdate($date) {
-		date_default_timezone_set("America/New_York");
-		$today = date("mdY");
-		echo $today;
+	function get_to_date($date) {
+		$vdate = new DateTime($date, new DateTimeZone('America/Phoenix'));
+		echo $vdate->format("F d, Y");
 	 }		 
 	 function get_to_vtime($time) {
 		 

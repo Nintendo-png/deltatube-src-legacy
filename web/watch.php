@@ -193,7 +193,7 @@ if (window.yt.timing) {yt.timing.tick("bf");}    </script>
 										<div id="watch-description" class="yt-uix-expander yt-uix-expander-collapsed yt-uix-button-panel" data-expander-action="yt.www.watch7.handleDescriptionToggle">
 											<div id="watch-description-content">
 												<div id="watch-description-clip">
-													<p id="watch-uploader-info"> <strong>Published on <span id="eow-date" class="watch-video-date">Dec 14, 2012</span>
+													<p id="watch-uploader-info"> <strong>Published on <span id="eow-date" class="watch-video-date"><?php echo $initgnt->get_to_date($video_info['published']);?></span>
 </strong> </p>
 													<div id="watch-description-text">
 														<p id="eow-description"><?php echo $video_info['vdesc']; ?></p>
