@@ -5,6 +5,9 @@
 $initvid = new video_tools;
 	$initusr = new user_tools;
 	$initgnt = new general_tools;
+			if(!isset($_COOKIE['sessionuser'])) {
+			header("Location: /sign_in");
+		}
 ?>
 	<title>Upload your video - JarkTube</title>
 	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
@@ -141,17 +144,19 @@ Or drag and drop video files
 <h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Tags</h3>
 <input type="text" style="width: 355px; height: 20px; margin-bottom: 5px;" class="yt-uix-form-input-text" placeholder="Separate tags with commas" spellcheck="false" name="username" id="username" value="">
 <h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Suggested Tags</h3>
+	<p class="yt-spinner"> <img src="/yts/img/pixel-vfl3z5WfW.gif" class="yt-spinner-img" alt="Loading icon"> Loading... </p>
+<!--
 <button class="yt-uix-button yt-uix-button-hh-default" type="submit" style="height: 20px;" role="button"><span class="yt-uix-button-content">+None</span></button>
 <button class="yt-uix-button yt-uix-button-hh-default" type="submit" style="height: 20px;" role="button"><span class="yt-uix-button-content">+Placeholder</span></button>
-<button class="yt-uix-button yt-uix-button-hh-default" type="submit" style="height: 20px;" role="button"><span class="yt-uix-button-content">+2012</span></button>
+<button class="yt-uix-button yt-uix-button-hh-default" type="submit" style="height: 20px;" role="button"><span class="yt-uix-button-content">+2012</span></button> -->
 </div>
 <div class="upload-privacy-col">
 <h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Privacy Settings</h3>
 <span style="width: 290px; height: 25px; margin-bottom: 25px;" class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span>
 <span class="yt-uix-form-input-select-value"></span></span><select style="width: 290px; height: 25px;" class="yt-uix-form-input-select-element">
- <option class="yt-uix-form-input-select-value" value="volvo">Public</option>
-  <option class="yt-uix-form-input-select-value" value="saab">Private</option>
-  <option class="yt-uix-form-input-select-value" value="mercedes">Unlisted</option>
+ <option class="yt-uix-form-input-select-value" value="public">Public</option>
+  <option class="yt-uix-form-input-select-value" value="private">Private</option>
+  <option class="yt-uix-form-input-select-value" value="unlisted">Unlisted</option>
 </select></span>
 <h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Post to your subscribers</h3>
 <textarea id="tesxtfield-post" style="width: 275px; height: 45px; margin-bottom: 25px;" placeholder="Customize your message" class="yt-uix-form-textarea link-gplus-lightbox" data-upsell="comment" name="comment"></textarea>
@@ -182,6 +187,7 @@ uploaddetail.style.display = "none";
 function uploadFile() {
     uploadbutton.click();
 	uploadbutton.addEventListener("change", function() {
+		  var files = uploadbutton.files;
 		uploadstart.style.display = "none";
 		uploaddetail.style.display = "block";
 	}, true);

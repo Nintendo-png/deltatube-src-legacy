@@ -200,9 +200,8 @@ $result = $stmt->get_result();
 		}
 		function update_lastlogin($uid, $type = NULL) {
 		GLOBAL $init;
-		date_default_timezone_set('UTC');
 			//meant to be used on login or signup page
-			$logindate = date("m/d/Y h:i.s a");
+			$logindate = strtotime("now");
 			if($type = 1) {
 				$check = "UPDATE user SET lastlogin=? WHERE username=?";
 		} else {
@@ -279,9 +278,14 @@ if($result->num_rows > 0) {
 $result = $stmt->get_result();
 		  return $result->num_rows;
 	}
-	function get_to_date($date) {
-		$vdate = new DateTime($date, new DateTimeZone('America/Phoenix'));
-		echo $vdate->format("F d, Y");
+	function get_to_date($date, $ago = 0) {
+		if(isset($ago) && $ago == 1) {
+			
+			$now = strtotime("now");
+			echo $date / 2629743;
+		} else {
+		echo date("F d, Y", $date);
+		}
 	 }		 
 	 function get_to_vtime($time) {
 		 

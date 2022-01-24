@@ -425,7 +425,7 @@
       </a>
     </h2>
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -455,7 +455,7 @@
 </div>
 <!-- end -->
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -485,7 +485,7 @@
 </div>
 <!-- end -->
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -515,7 +515,7 @@
 </div>
 <!-- end -->
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('20'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -555,7 +555,7 @@
     </h2>
 	
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -585,7 +585,7 @@
 </div>
 <!-- end -->
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -615,7 +615,7 @@
 </div>
 <!-- end -->
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">
@@ -645,7 +645,7 @@
 </div>
 <!-- end -->	
 	<!-- start -->
-											<?php $feature = json_decode($initvid->get_rand_featured('n'), 1); 
+											<?php $feature = json_decode($initvid->get_rand_featured('10'), 1); 
 											$getuname = $initusr->get_uname_by($feature['uid']); 
 											?>
 	<div class="lohp-vertical-shelf-item context-data-item" data-context-item-title="title" data-context-item-type="video" data-context-item-time="0:00" data-context-item-user="username" data-context-item-id="id" data-context-item-views="0">

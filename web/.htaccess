@@ -6,5 +6,3 @@ RewriteRule ^embed/(.*) embedplayer.php?v=$1 [L]
 RewriteRule ^user/(.*)/(.*)$ channel_1?uid=$1&page=$2 [L]
 RewriteRule ^user/(.*)$ channel_1?uid=$1 [L]
 RewriteRule ^v/(.*) embedplayer.php?v=$1 [L]
-
-

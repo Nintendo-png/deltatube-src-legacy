@@ -23,7 +23,8 @@
 	"cock", 
 	"cum", 
 	"nigga", 
-	"nigger"
+	"nigger",
+	"sex"
 	);
 	foreach ($badname as $bad) {
 		if (strstr($_GET['uname'], $bad)) {

@@ -7,7 +7,11 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/important/function.php");
 	$initgnt = new general_tools;
 	 if($initvid->validate_video_id($_GET['video_id']) == 1) { 
 	 $video_info = json_decode($initvid->get_video_details($_GET['video_id'], 0), true);
-	 $uname = $initusr->get_uname_by($video_info['uid']); 
+	 $uname = $initusr->get_uname_by($video_info['uid']);
+	 if(isset($_COOKIE['sessionuser'])) {
+	 $initvid->add_views($_GET['video_id'], $_COOKIE['sessionuser']); 
+	 }
+	 
 	} else {
 			echo "status=fail&reason=Invalid+Video+ID.&errorcode=1";
 			die();
@@ -16,10 +20,10 @@ if(isset($_GET['video_id'])) {
 $fmt_map = array(
 //the map that plays videos
 'itag' => '43',
-'url' => 'http://jark.succulent64.ml/ytd/video/' . $_GET['video_id'] . '.mp4',
+'url' => 'http://ndisk.cizgifilmlerizle.com/getvid?evid=Mbv6eIFKf9bMalqHDxKQqSskiplaPJItb-9W0CZ5YJPGzDSmdse0XRKkmXw00nQSMY64ED9ruYdambcAoOqc-Ef22LwR06B9pZ-S_Q9FYHbTKJG5EO6jcMxPgqSlwELNGs8zZToRLREWPGVdqyruF38vLnQo0Kjl__L3fon43aKO4O2Jb0dZNbfdJeRtO9r-hwjts4WpimT56y6CMroLrhOjk4K3GISyEtI-51fyJlLixt1Naw4HSXgjuhuA-Q2srI_g_gg1mtSWCfoUDerhGzzw_O1jjaMPoF12toXKxOJI-Fijii5ULg3Ke7YqMeguZjbVILv73IITzntZgW0Tkw4',
 'sig' => 'jark' . rand(1, 8) . '-' . bin2hex(random_bytes(5)),
 'fallback_host' => 'tc.v14.cache3.c.youtube.com',
-'quality' => 'hd720',
+'quality' => 'hd1080',
 'type' => 'video/webm; codecs="vp8.0, vorbis"'
 );
 $url_encoded_fmt_stream_map = http_build_query($fmt_map);
@@ -29,10 +33,11 @@ $other_map = array(
 'cc_module' => 'ass.swf',
 'track_embed' => '1',
 'video_verticals' => '[933, 8, 930]',
-'vq' => 'hd720',
+'vq' => 'auto',
 'title' => $video_info['vtitle'],
 'sendtmp' => '1',
 'avg_rating' => '5.0',
+'ttsurl' => 'IS_Intro_Subs.scc',
 'caps' => 'asr',
 'expire' => time() + 7,
 'sparams' => 'asr_langs,caps,v,expire',
@@ -54,12 +59,14 @@ $other_map = array(
 'has_cc' => 'False',
 'fexp' => '907063,919329,913565,920704,912806,902000,922403,922405,929901,913605,925006,908529,920201,930101,911116,926403,910221,901451,919114',
 'ftoken' => '',
+'iurlsd' => 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['video_id'] . '.png',
 'cc_font' => 'Arial Unicode MS, arial, verdana, _sans',
 'allow_embed' => '1',
 'author' => $uname,
 'length_seconds' => $video_info['vtime'],
 'storyboard_spec' => '',
 'abd' => '1',
+'iurlmaxres' => 'http://jark.succulent64.ml/ytd/thumb/' . $_GET['video_id'] . '.png',
 'cc3_module' => 'ass.swf',
 'tmi' => '1',
 'ptk' => 'youtube_none',

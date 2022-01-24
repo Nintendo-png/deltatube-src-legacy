@@ -8,6 +8,7 @@
 	 $hash = $thing->get_hash($_POST['username']);
 	 if(password_verify($_POST['Passwd'], $hash) ) {
 		 if($thing->get_flag($_POST['username']) < 1) {
+		 $thing->update_lastlogin($_POST['username'], 1);
 		 $keys = array();
 		 $keys['samesite'] = "Lax";
 		 $keys['path'] = "/";

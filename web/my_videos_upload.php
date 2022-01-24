@@ -33,7 +33,7 @@ $initvid = new video_tools;
 			
     <!-- begin content -->
     <div id="content">
-	untill hard drive stuff is solved, don't ask the owner to upload videos
+	uploader is coming soon, please do not ask the owner to upload.
     </div>
     <!-- end content -->
   </div>

@@ -81,6 +81,7 @@ if(isset($_COOKIE['sessionuser'])) {
 .password-meter-wrap {
     margin-top: 5px;
     height: 16px;
+	width: 288px;
     background-color: #ddd;
 }
 
@@ -692,16 +693,14 @@ if(isset($_COOKIE['sessionuser'])) {
   top: 1px;
   height: 19px;
   width: 52px;
-  background: transparent url(//web.archive.org/web/20121221165337im_/https://ssl.gstatic.com/accounts/ui/google-signin-flat.png) no-repeat;
   }
   @media only screen and (-webkit-device-pixel-ratio: 2){
   .signin-box h2 strong {
-  background: transparent url(//web.archive.org/web/20121221165337im_/https://ssl.gstatic.com/accounts/ui/google-signin-flat_2x.png) no-repeat;
   background-size: 52px 19px;
   }
   }
   .signin-box div {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.9em;
   }
   .signin-box label {
   display: block;

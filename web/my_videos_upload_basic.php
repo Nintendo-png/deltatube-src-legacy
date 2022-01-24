@@ -37,9 +37,8 @@ float: left;
 	border-bottom: 2px solid #E0E0E0;
 	padding: 14px;
 }
-#upload-start {
-	border: 2px solid #E0E0E0;
-	height: 400px;
+#upload-details {
+    overflow: hidden;
 }
 .upload-start-col {
  margin: auto;
@@ -48,8 +47,11 @@ float: left;
   padding: 10px;
 }
 .upload-details-col {
-float: left;
-margin-right: 10px;
+	margin-right: 45px;
+    float:left;
+}
+.upload-privacy-col {
+    overflow: hidden;
 }
 .upload-start-text {
 	font-size:20px;
@@ -60,6 +62,13 @@ margin-right: 10px;
 	font-weight:normal;
 	margin-left: 15px;
 	color: #AFAFB1;
+}
+.space-1 {
+	margin-bottom: 10px;
+}
+.save-button {
+	margin-top: 10px;
+	float: right;
 }
 </style>
 	</head>
@@ -85,19 +94,40 @@ margin-right: 10px;
     </div>
 </div></div>
 	<div class="upload-div">
-<div class="upload-title">Upload Video Files</div>
+<div class="upload-title">Upload your video</div>
 <div class="upload-center">
 <div id="upload-details">
+<div class="upload-status">
+</div>
 <div class="upload-details-col">
-<form>
-<h3>Title</h3>
-<input type="text" style="width: 300px; height: 10px;" class="yt-uix-form-input-text" spellcheck="false" name="username" id="username" value="">
+<h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Title</h3>
+<input type="text" style="width: 355px; height: 15px; margin-bottom: 20px;" class="yt-uix-form-input-text" spellcheck="false" name="username" id="username" value="">
+<h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Description</h3>
+<textarea id="tesxtfield-post" style="width: 355px; height: 55px; margin-bottom: 25px;" class="yt-uix-form-textarea link-gplus-lightbox" data-upsell="comment" name="comment"></textarea>
+<h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Tags</h3>
+<input type="text" style="width: 355px; height: 20px; margin-bottom: 5px;" class="yt-uix-form-input-text" placeholder="Separate tags with commas" spellcheck="false" name="username" id="username" value="">
 </div>
-<div class="upload-privacy">
-<h3>Title</h3>
-<input type="text" style="width: 300px; height: 10px;" class="yt-uix-form-input-text" spellcheck="false" name="username" id="username" value="">
+<div class="upload-privacy-col">
+<h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Privacy Settings</h3>
+<span style="width: 290px; height: 25px; margin-bottom: 25px;" class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span>
+<span class="yt-uix-form-input-select-value"></span></span><select style="width: 290px; height: 25px;" class="yt-uix-form-input-select-element">
+ <option class="yt-uix-form-input-select-value" value="volvo">Public</option>
+  <option class="yt-uix-form-input-select-value" value="saab">Private</option>
+  <option class="yt-uix-form-input-select-value" value="mercedes">Unlisted</option>
+</select></span>
+<h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Post to your subscribers</h3>
+<textarea id="tesxtfield-post" style="width: 275px; height: 45px; margin-bottom: 25px;" placeholder="Customize your message" class="yt-uix-form-textarea link-gplus-lightbox" data-upsell="comment" name="comment"></textarea>
+<h3 class="yt-uix-form-label" style="margin-bottom: 5px;">Category</h3>
+<span style="width: 290px; height: 25px; margin-bottom: 5px;" class="yt-uix-form-input-select "><span class="yt-uix-form-input-select-content"><span class="yt-uix-form-input-select-arrow yt-sprite"></span>
+<span class="yt-uix-form-input-select-value"></span></span><select style="width: 290px; height: 25px;" class="yt-uix-form-input-select-element">
+ <option class="yt-uix-form-input-select-value" value="volvo">Choose category</option>
+  <option class="yt-uix-form-input-select-value" value="saab">Private</option>
+  <option class="yt-uix-form-input-select-value" value="mercedes">Unlisted</option>
+</select></span>
 </div>
-</form>
+<div class="save-button">
+<button class="yt-uix-button yt-uix-button-hh-primary" type="submit" id="channel-desc-submit"  role="button"><span class="yt-uix-button-content">Upload</span></button>
+</div>
 </div>
 </div>
 </div>
@@ -110,7 +140,5 @@ margin-right: 10px;
 	<?php require_once("yts/modbin/footer.php"); ?>
 	
 	<div id="debug"> </div>
-
 </body>
-
 </html>
