@@ -43,8 +43,14 @@
 Admin Panel
     </a> </li>
 							<ol class="indented">
-								<li class="sub-level"> <a href="#">
-Banning
+								<li class="sub-level"> <a href="admin">
+Stats
+      </a> </li>
+								<li class="sub-level"> <a href="javascript:alert('Not implemented yet')">
+Bans
+      </a> </li>
+								<li class="sub-level"> <a href="javascript:alert('Not implemented yet')">
+Reports
       </a> </li>
 
 							</ol>
@@ -55,7 +61,7 @@ Banning
 Admin Panel
       </h1>
 						<div id="article-container" class="ytg-box"> 
-						<p>Welcome to the admin panel. Please don't misuse it or your admin status will be revoked and you probably will be banned.</p>
+						<p>Welcome to the admin panel. Please don't misuse it or your admin status will be revoked and you probably will be <b>banned</b>.</p>
 							<div class="grey-rounded-box tip"> <h3 class="no-padding">Server Stats</h3> <ul class="disc no-padding-bottom"> 
 							<li>PHP Version: <?php echo phpversion(); ?> / Zend Engine Version <?php echo zend_version(); ?></li>
 							<li>Apache Version: <?php echo apache_get_version(); ?></li>
@@ -69,7 +75,7 @@ Admin Panel
 							/ Total Private: <?php echo $initgnt->get_all(NULL, "private"); ?> / Total Unlisted: <?php echo $initgnt->get_all(NULL, "unlisted"); ?>
 							</li> 
 							<li>Total Video Views: <?php echo $initgnt->get_all(NULL, "views"); ?></li>
-							<li>Total Comments: 0 / Total Video Responses: 0</li>
+							<!--Commenting unused things for now <li>Total Comments: 0 / Total Video Responses: 0</li>-->
 							</ul> </div>
 							
 						</div>
