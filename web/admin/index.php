@@ -10,7 +10,7 @@
 	}
 	//hello, the stuff used is meant for a windows host, so the exec stuff won't work on linux or darwin (if it even has php).
 ?>
-	<title>JarkTube</title>
+	<title>FalconTube</title>
 	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<meta name="description" content="An Hitchhiker 2013 YouTube revival">
@@ -61,7 +61,7 @@ Reports
 Admin Panel
       </h1>
 						<div id="article-container" class="ytg-box"> 
-						<p>Welcome to the admin panel. Please don't misuse it or your admin status will be revoked and you probably will be <b>banned</b>.</p>
+						<p>Welcome to the admin panel. Please don't misuse it or your admin status will be revoked and there is a 99% chance that you will be <b>banned</b>.</p>
 							<div class="grey-rounded-box tip"> <h3 class="no-padding">Server Stats</h3> <ul class="disc no-padding-bottom"> 
 							<li>PHP Version: <?php echo phpversion(); ?> / Zend Engine Version <?php echo zend_version(); ?></li>
 							<li>Apache Version: <?php echo apache_get_version(); ?></li>
