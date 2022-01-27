@@ -6,7 +6,7 @@ $initvid = new video_tools;
 	$initusr = new user_tools;
 	$initgnt = new general_tools;
 ?>
-	<title>JarkTube</title>
+	<title>FalconTube</title>
 	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<meta name="description" content="It's December 2012 all over again!">

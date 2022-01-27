@@ -25,34 +25,7 @@ function signup_Validator()
 					return;
 	} else {
 	if(password_1.value == password_2.value) {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    if(this.responseText == 1) {
-			alert("This username has been used.");
-		signup_button.value='Sign Up';
-	signup_button.removeAttribute('disabled');
-	} else if(this.responseText == 3) {
-			alert("Username is not allowed. Please type in a different username.");
-		signup_button.value='Sign Up';
-	signup_button.removeAttribute('disabled');
-	} else {
-		//signup system
-		//really shitty, the point of this revival
-		var formData = new FormData(signup_form);
-		  xhttp.onload = function() {
-    if(this.responseText == 1) {
-		window.location.href = "/";
-	}
-		  }
-xhttp.open("POST", "important/ajax/signup_ajax.php", true);
-  xhttp.send(formData);
-  
-	}
-	
-    }
-  xhttp.open("GET", "important/ajax/signup_ajax.php?uname=" + signup_username.value, true);
-  xhttp.send();
-
+		//insert signup
 	} else {
 					alert("Please make sure both passwords match.");
 					signup_button.value='Sign Up';

@@ -7,7 +7,7 @@ if(isset($_COOKIE['sessionuser'])) {
 }
 ?>
   <meta charset="utf-8">
-  <title>JarkTube</title>
+  <title>FalconTube</title>
   <link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
   	<link id="css-4115735524" rel="stylesheet" href="/yts/cssbin/www-hitchhiker-vflTcqmWD.css">
 	<link id="css-583125701" rel="stylesheet" href="/yts/cssbin/www-the-rest-vflzYVqky.css">	
