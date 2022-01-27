@@ -39,21 +39,12 @@
 				<div class="ytg-wide">
 					<div id="yts-nav" class="ytg-1col">
 						<ol>
-							<li class="top-level"> <a href="/admin/index" class="item-highlight">
+							<li class="top-level"> <a href="admin" class="item-highlight">
 Admin Panel
     </a> </li>
 							<ol class="indented">
-								<li class="sub-level"> <a href="/t/about_getting_started">
+								<li class="sub-level"> <a href="#">
 Banning
-      </a> </li>
-								<li class="sub-level"> <a href="/t/about_essentials">
-Reports
-      </a> </li>
-								<li class="sub-level"> <a href="/t/community_guidelines">
-Community Guidelines
-      </a> </li>
-								<li class="sub-level"> <a href="">
-Contact Us
       </a> </li>
 
 							</ol>
