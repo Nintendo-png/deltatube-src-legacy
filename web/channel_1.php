@@ -23,7 +23,7 @@
 <html lang="en" dir="ltr">
 <head>
 
-	<title>FalconTube</title>
+	<title><?php echo $user[0]; ?>'s Channel - FalconTube</title>
 	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<meta name="description" content="An Hitchhiker 2013 YouTube revival">
@@ -115,7 +115,7 @@ Browse videos from the previous page, including the homepage feed, channel video
         <span class="yt-uix-button-subscription-container yt-uix-button-context-light"><button onclick=";window.location.href=this.getAttribute('href');return false;" href="/soon.php" type="button" class="yt-subscription-button yt-subscription-button-js-default   yt-uix-button yt-uix-button-subscribe-unbranded" data-subscription-feature="rc-rel" data-subscription-value="UCGt7X90Au6BV8rf49BiM6Dg" data-sessionlink="ei=CJzGm6PRrLQCFZ8XIQodv2DPIQ%3D%3D&amp;feature=rc-rel" data-subscription-button-type="unbranded" data-subscription-type="" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-subscribe-unbranded" src="/yts/img/pixel-vfl3z5WfW.gif" alt=""><span class="yt-uix-button-valign"></span></span><span class="yt-uix-button-content">  <span class="subscribe-hh-label">Subscribe</span>
   <span class="subscribed-hh-label">Subscribed</span>
   <span class="unsubscribe-hh-label">Unsubscribe</span>
- </span></button><span class="yt-subscription-button-subscriber-count-unbranded-horizontal">6M</span><span class="yt-subscription-button-disabled-mask"></span></span>
+ </span></button><span class="yt-subscription-button-subscriber-count-unbranded-horizontal">0</span><span class="yt-subscription-button-disabled-mask"></span></span>
     </div>
   </li>
 
