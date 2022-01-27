@@ -2,7 +2,7 @@
 		<div id="footer-hh">
 			<div id="footer-hh-main">
 				<div id="footer-hh-logo">
-					<a href="/" title="JarkTube home"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="JarkTube home"></a>
+					<a href="/" title="FalconTube home"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="FalconTube home"></a>
 				</div>
 				<ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
 					<li>
@@ -23,10 +23,10 @@ Location:
 			</div>
 			<div id="footer-hh-links">
 				<ul id="footer-hh-links-primary">
-					<li><a href="/t/about_jarktube">About</a></li>
+					<li><a href="/t/about">About</a></li>
 					<li><a href="/t/copyright_center">Copyright</a></li>
-					<li><a href="https://discord.gg/sTvqgbtpzA">Discord</a></li>
-					<li><a href="/dev">Developers</a></li>
+					<li><a href="https://discord.gg/tXFjuaC3pD">Discord</a></li>
+					<li><a href="/t/dev">Developers</a></li>
 				</ul>
 				<ul id="footer-hh-links-secondary">
 					<li><a href="/t/terms">Terms</a></li>
