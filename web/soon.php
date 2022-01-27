@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-<title>404 Not Found</title>
+<title>Page not added yet!</title>
         <link id="css-3869085422" rel="stylesheet" href="/yts/cssbin/www-hitchhiker-vflTcqmWD.css">
 
   </head>
@@ -11,11 +11,21 @@
       <div id="error-page-content">
           <img id="error-page-hh-illustration" src="/yts/img/image-hh-404-vflxxCpNv.png" alt="">
         <p>
-          We&#39;re sorry, the page you requested has not been added yet!
+	<?php
+	if ($_GET['context'] == "video") {
+	?>
+          We&#39;re sorry, in order to watch videos at the moment you must find them from the home page.
+	<?php
+	} else{
+	?>
+          We&#39;re sorry, the page you requested has not been added yet!	
+	<?php
+	}
+	?>
         </p>
         <div id="yt-masthead">
               <a id="logo-container" href="/" title="FalconTube home">
-			  <img id="logo" src="/yts/img/pixel-vfl3z5WfW.gif" alt="JarkTube home"></a>
+			  <img id="logo" src="/yts/img/pixel-vfl3z5WfW.gif" alt="FalconTube home"></a>
 
           
 
