@@ -1,7 +1,7 @@
 
 <div id="yt-masthead-container" class="yt-grid-box yt-masthead-hh">
 			<div id="yt-masthead" class="">
-				<a id="logo-container" href="/" title="FalconTube home"><img id="logo" src="/yts/img/pixel-vfl3z5WfW.gif" alt="FalconTube home"></a><span><small>BETA</small></span>
+				<a id="logo-container" href="/" title="FalconTube home"><img id="logo" src="/yts/img/pixel-vfl3z5WfW.gif" alt="FalconTube home"></a>
 				<?php if(!isset($_COOKIE['sessionuser'])) { ?>
 				<div id="yt-masthead-signin">
 					<button href="/sign_in" type="button" class=" yt-uix-button yt-uix-button-hh-primary" onclick=";window.location.href=this.getAttribute('href');return false;" role="button"><span class="yt-uix-button-content">Sign In </span></button>
