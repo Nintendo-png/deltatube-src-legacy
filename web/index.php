@@ -6,7 +6,7 @@
 	$initvid = new video_tools;
 	$initusr = new user_tools;
 ?>
-	<title>JarkTube</title>
+	<title>FalconTube</title>
 	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<meta name="description" content="An Hitchhiker 2013 YouTube revival">
@@ -53,7 +53,7 @@
   </div>
 <div class="yt-alert-buttons"></div><div class="yt-alert-content" role="alert">    <span class="yt-alert-vertical-trick"></span>
     <div class="yt-alert-message">
-	File successfully uploaded.
+	Upload successful! 
     </div>
 </div></div>
 <?php } ?>
@@ -62,7 +62,7 @@
   </div>
 <div class="yt-alert-buttons"></div><div class="yt-alert-content" role="alert">    <span class="yt-alert-vertical-trick"></span>
     <div class="yt-alert-message">
-	This is in beta like the website this is hosted on, so use at your own risk.
+	FalconTube is currently in beta. If you encounter any bugs report them on the <a href="https://discord.gg/tXFjuaC3pD">Discord</a>.
     </div>
 </div></div>
 	</div>
