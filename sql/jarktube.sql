@@ -78,7 +78,7 @@ CREATE TABLE `video` (
   `keywords` text NOT NULL,
   `vtime` varchar(5) NOT NULL,
   `category` varchar(3) NOT NULL COMMENT 'category (ex: am auto and moters)',
-  `video_type` text NOT NULL DEFAULT 'public',
+  `video_type` text NOT NULL,
   `annotations` varchar(1) NOT NULL COMMENT 'Todo: make annotations',
   `featured` int(11) NOT NULL COMMENT 'featured video'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
