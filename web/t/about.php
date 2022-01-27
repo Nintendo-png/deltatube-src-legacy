@@ -27,7 +27,7 @@
 	
 	<div id="masthead-subnav" class="yt-nav yt-nav-dark">
 	<ul>
-		<li> <a class="yt-nav-item" href="/t/about_jarktube">
+		<li> <a class="yt-nav-item" href="/t/about">
         About
     </a> </li>
 		<li> <a class="yt-nav-item" href="/t/press">
@@ -42,7 +42,7 @@
 		<li> <a class="yt-nav-item" href="/t/advertising_overview">
         Advertising
     </a> </li>
-		<li> <a class="yt-nav-item selected" href="/dev">
+		<li> <a class="yt-nav-item selected" href="/t/dev">
         Developers
     </a> </li>
 		<li> <a class="yt-nav-item" href="//web.archive.org/web/20121221224625/https://support.google.com/youtube/?hl=en-US">
@@ -58,42 +58,34 @@
 				<div class="ytg-wide">
 					<div id="yts-nav" class="ytg-1col">
 						<ol>
-							<li class="top-level"> <a href="/t/about_jarktube" class="item-highlight">
-About JarkTube
+							<li class="top-level"> <a href="/t/about" class="item-highlight">
+About FalconTube
     </a> </li>
 							<ol class="indented">
 								<li class="sub-level"> <a href="/t/about_getting_started">
 Getting Started
       </a> </li>
 								<li class="sub-level"> <a href="/t/about_essentials">
-JarkTube Essentials
+Essentials
       </a> </li>
 								<li class="sub-level"> <a href="/t/community_guidelines">
 Community Guidelines
       </a> </li>
-								<li class="sub-level"> <a href="//t/contact_us">
+								<li class="sub-level"> <a href="https://discord.gg/tXFjuaC3pD">
 Contact Us
       </a> </li>
-								<li class="sub-level"> <a href="https://web.archive.org/web/20121221224625/http://www.google.com/intl/en/jobs/youtube/">
-Careers
-      </a> </li>
-								<li class="sub-level">
-									<li class="sub-level"> <a href="https://web.archive.org/web/20121221224625/http://www.googlestore.com/You+Tube/">
-A link to somewhere
-        </a> </li>
 								</li>
 							</ol>
 						</ol>
 					</div>
 					<div id="yts-article">
 						<h1 id="header">
-About JarkTube
+About FalconTube
       </h1>
 						<div id="article-container" class="ytg-box">
-							<p>JarkTube is an Hitchhiker 2013 YouTube revival. It was supposed to be an low effort YouTube 2005 revival that had shitty code, but became 2011, 
-							then 2013. It may probably still have shitty code still.<br> I want JarkTube to be an revival where you can freely express your creativity. <br>Of course, no NSFW or nudity.
+							<p>FalconTube is an Hitchhiker 2013 YouTube revival. It was supposed to be an low effort YouTube 2005 revival that had shitty code, but became 2011, 
+							then 2013. It may probably still have shitty code still.<br> I want FalconTube to be an revival where you can freely express your creativity. <br>Of course, <b>no NSFW or nudity.</b>
 							</p>
-						
 						</div>
 					</div>
 				</div>

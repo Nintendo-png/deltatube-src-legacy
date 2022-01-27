@@ -27,7 +27,7 @@
 	
 	<div id="masthead-subnav" class="yt-nav yt-nav-dark">
 	<ul>
-		<li> <a class="yt-nav-item" href="/t/about_jarktube">
+		<li> <a class="yt-nav-item" href="/t/about">
         About
     </a> </li>
 		<li> <a class="yt-nav-item" href="/t/press">
@@ -42,7 +42,7 @@
 		<li> <a class="yt-nav-item" href="/t/advertising_overview">
         Advertising
     </a> </li>
-		<li> <a class="yt-nav-item" href="/dev">
+		<li> <a class="yt-nav-item" href="/t/dev">
         Developers
     </a> </li>
 	</ul>
@@ -55,8 +55,8 @@
 				<div class="ytg-wide">
 					<div id="yts-nav" class="ytg-1col">
 						<ol>
-							<li class="top-level"> <a href="/t/about_jarktube">
-About JarkTube
+							<li class="top-level"> <a href="/t/about">
+About
     </a> </li>
 							<ol class="indented">
 								<li class="sub-level"> <a href="/t/about_getting_started" class="item-highlight">
@@ -71,13 +71,6 @@ Community Guidelines
 								<li class="sub-level"> <a href="//t/contact_us">
 Contact Us
       </a> </li>
-								<li class="sub-level"> <a href="https://web.archive.org/web/20121221224625/http://www.google.com/intl/en/jobs/youtube/">
-Careers
-      </a> </li>
-								<li class="sub-level">
-									<li class="sub-level"> <a href="https://web.archive.org/web/20121221224625/http://www.googlestore.com/You+Tube/">
-A link to somewhere
-        </a> </li>
 								</li>
 							</ol>
 						</ol>
@@ -96,7 +89,7 @@ Getting Started
 										<ul class="disc">
 											<li>Find videos on what to watch or your subscription feed.</li>
 											<li>Click on the browse page.</li>
-											<li>Share it on the <a href="/t/about_jarktube_discord">JarkTube Discord</a> for other people to find and maybe a staff member will feature it.</li>
+											<li>Share it on our <a href="/t/about_jarktube_discord">Discord Server</a> for other people to find and maybe a staff member will feature it.</li>
 												<li>Subscribe to receive new videos in your feeds.</li>
 										</ul>
 									</div>
@@ -114,13 +107,11 @@ Getting Started
 							<h1 class="heading-spacer">Learn More</h1>
 							<hr class="separator">
 							<div id="video-scroller-side-text">
-								<p>Visit <a href="/web/20121221224625/https://www.youtube.com/t/about_essentials">YouTube Essentials</a> and discover tips to make the most of your YouTube experience.</p>
-								<p>Check out the <a href="/web/20121221224625/https://www.youtube.com/user/videotoolbox" target="_blank">video toolbox</a> to learn from other YouTubers.</p>
+								<p>Visit <a href="/t/about_essentials">FalconTube Essentials</a> and discover tips to make the most of your FalconTube experience.</p>
+								<p>Check out the <a href="/user/videotoolbox" target="_blank">video toolbox</a> to learn from other FalconTubers.</p>
 								<p>Here are some channel suggestions so you can start watching now:</p>
 								<ul class="disc">
-									<li><a href="/web/20121221224625/https://www.youtube.com/user/youtube" target="_blank">Official YouTube Channel</a></li>
-									<li><a href="//web.archive.org/web/20121221224625/https://support.google.com/youtube/?hl=en-US" target="_blank">YouTube Help Center</a></li>
-									<li><a href="/web/20121221224625/https://www.youtube.com/user/google" target="_blank">Official Google Channel</a></li>
+									<li><a href="/user/falcontube" target="_blank">Official FalconTube Channel</a></li>
 								</ul>
 							</div>
 							<div id="video-scroller-videos">
