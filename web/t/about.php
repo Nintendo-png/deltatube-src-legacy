@@ -42,7 +42,7 @@
 		<li> <a class="yt-nav-item" href="/t/advertising_overview">
         Advertising
     </a> </li>
-		<li> <a class="yt-nav-item selected" href="/dev">
+		<li> <a class="yt-nav-item selected" href="/t/dev">
         Developers
     </a> </li>
 		<li> <a class="yt-nav-item" href="//web.archive.org/web/20121221224625/https://support.google.com/youtube/?hl=en-US">
