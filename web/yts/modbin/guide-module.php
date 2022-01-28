@@ -45,16 +45,16 @@
 													<ul id="guide-channels" class="guide-channels-list guide-item-container yt-uix-scroller filter-has-matches">
 													
 														<li class="guide-channel">
-															<a class="guide-item  guide-item-selected narrow-item" href="/" title="Popular on JarkTube" data-channel-id="youtube"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/popular.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
+															<a class="guide-item  guide-item-selected narrow-item" href="/" title="Popular on FalconTube" data-channel-id="youtube"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/popular.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
 																</span>
 																</span>
 																</span> 
-																<span class="display-name"><span>Popular on JarkTube</span></span>
+																<span class="display-name"><span>Popular on FalconTube</span></span>
 															</a>
 														</li>
 														
 														<li class="guide-channel">
-															<a class="guide-item " href="/music?feature=guide" title="Music" data-channel-id="music"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/music.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
+															<a class="guide-item " href="/user/music?feature=guide" title="Music" data-channel-id="music"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/music.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
 																</span>
 																</span>
 																</span> <span class="display-name">
@@ -63,7 +63,7 @@
 														</li>
 														
 														<li class="guide-channel">
-															<a class="guide-item " href="/gaming?feature=guide" title="Gaming" data-channel-id="gaming"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/gaming.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
+															<a class="guide-item " href="/user/gaming?feature=guide" title="Gaming" data-channel-id="gaming"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/gaming.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
 																</span>
 																</span>
 																</span> <span class="display-name">
@@ -71,7 +71,7 @@
 															</a>
 														</li>
 														<li class="guide-channel">
-															<a class="guide-item " href="/web/20121218011023/https://www.youtube.com/channel/HCPvDBPPFfuaM?feature=guide" title="News" data-channel-id="HCPvDBPPFfuaM"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/news.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
+															<a class="guide-item " href="/user/news?feature=guide" title="News" data-channel-id="HCPvDBPPFfuaM"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/news.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
 																</span>
 																</span>
 																</span> <span class="display-name">
@@ -79,7 +79,7 @@
 															</a>
 														</li>
 														<li class="guide-channel">
-															<a class="guide-item " href="/web/20121218011023/https://www.youtube.com/feed/UCBR8-60-B28hp2BmDPdntcQ?feature=guide" title="Spotlight" data-channel-id="UCBR8-60-B28hp2BmDPdntcQ"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/spotlight.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
+															<a class="guide-item " href="/user/spotlight?feature=guide" title="Spotlight" data-channel-id="UCBR8-60-B28hp2BmDPdntcQ"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="/yts/img/spotlight.jpg?<?php echo date("His"); ?>" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
 																</span>
 																</span>
 																</span> <span class="display-name">
@@ -138,11 +138,11 @@ Channels for you
 												<ul class="guide-channels-list guide-item-container yt-uix-scroller filter-has-matches">
 												
 											<li class="guide-channel">
-														<a class="guide-item " href="feed/UCf4FYTsGFFcdc68AUPIU3RA" title="BuzzFeed" data-channel-id="UCf4FYTsGFFcdc68AUPIU3RA"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="//web.archive.org/web/20121218011023/https://i3.ytimg.com/i/f4FYTsGFFcdc68AUPIU3RA/1.jpg" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
+														<a class="guide-item " href="user/falcontube" title="BuzzFeed" data-channel-id="UCf4FYTsGFFcdc68AUPIU3RA"> <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="/yts/img/pixel-vfl3z5WfW.gif" alt="Thumbnail" data-thumb-manual="1" data-thumb="//web.archive.org/web/20121218011023/https://i3.ytimg.com/i/f4FYTsGFFcdc68AUPIU3RA/1.jpg" data-group-key="guide-channel-thumbs" width="18"><span class="vertical-align"></span></span>
 															</span>
 															</span>
 															</span> <span class="display-name">
-        <span>BuzzFeed</span> </span>
+        <span>falcontube</span> </span>
 														</a>
 													</li>
 													
@@ -163,11 +163,11 @@ Channels for you
 	  
               <li class="guide-channel">
     <a class="guide-item yt-uix-sessionlink "
-      href="/feed/UCDdjVhE01eP9315NLcK8ocg"
-      title="succulent63">
+      href="/user/falcontube"
+      title="falcontube">
         <span class="thumb"><span class="video-thumb ux-thumb yt-thumb-square-18 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img alt="Thumbnail" data-thumb-manual="1" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-group-key="guide-channel-thumbs" data-thumb="//i1.ytimg.com/i/DdjVhE01eP9315NLcK8ocg/1.jpg" width="18" ><span class="vertical-align"></span></span></span></span></span>
       <span class="display-name">
-        <span>succulent63</span>
+        <span>falcontube</span>
       </span>
     </a>
   </li>
