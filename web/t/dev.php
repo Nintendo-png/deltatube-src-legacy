@@ -27,7 +27,7 @@
 	
 	<div id="masthead-subnav" class="yt-nav yt-nav-dark">
 	<ul>
-		<li> <a class="yt-nav-item" href="/t/about_falcontube">
+		<li> <a class="yt-nav-item" href="/t/about">
         About
     </a> </li>
 		<li> <a class="yt-nav-item" href="/t/press">
