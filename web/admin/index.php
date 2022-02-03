@@ -43,7 +43,7 @@
 Admin Panel
     </a> </li>
 							<ol class="indented">
-								<li class="sub-level"> <a href="admin">
+								<li class="sub-level"> <a href="/admin">
 Stats
       </a> </li>
 								<li class="sub-level"> <a href="javascript:alert('Not implemented yet')">
