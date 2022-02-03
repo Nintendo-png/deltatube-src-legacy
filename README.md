@@ -1,7 +1,5 @@
-# falcontube-src
-The source code of FalconTube
-
-![Homepage](https://i.ibb.co/L9StfSt/Capture.png)
+# FalconTube
+A 2013 YouTube revival.
 
 ## Requirements
 - A webserver with PHP (Apache or Nginx)
@@ -9,7 +7,7 @@ The source code of FalconTube
 - A brain
 
 ## How to use
-
+## Currently the website is in a non-working state!
 Just copy the files in /web to the root of your webserver.
 
 With PHPMyAdmin, import the .sql file in the /sql folder.
