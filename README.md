@@ -7,7 +7,7 @@ A 2013/2006 YouTube revival.
 - A brain
 
 ## How to use
-## Currently the website is in a non-working state!
+## Currently the sign up script is broken
 Just copy the files in /web to the root of your webserver.
 
 With PHPMyAdmin, import the .sql file in the /sql folder.
