@@ -23,7 +23,7 @@
 <html lang="en" dir="ltr">
 <head>
 
-	<title><?php echo $user[0]; ?>'s Channel - FalconTube</title>
+	<title><?php echo $user[0]; ?> - FalconTube</title>
 	<link rel="icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">
 	<meta name="description" content="An Hitchhiker 2013 YouTube revival">
