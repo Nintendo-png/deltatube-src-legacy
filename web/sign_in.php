@@ -738,7 +738,7 @@ if(isset($_COOKIE['sessionuser'])) {
   </div>
   <div class="product-info youtube">
 <div class="product-headers">
-  <h2>Sign in now, and use your JarkTube account to:</h2>
+  <h2>Sign in now, and use your FalconTube account to:</h2>
 </div>
   <ul class="features">
   <li>
@@ -770,7 +770,7 @@ if(isset($_COOKIE['sessionuser'])) {
   </li>
 </ul>
 <p>Don't have an account?  <a href="/sign_up" target="_top">
-  Get one!
+  Try to sign up and just hope the form lets you!
   </a></p>
 
   </div>
