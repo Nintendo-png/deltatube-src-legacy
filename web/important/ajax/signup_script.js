@@ -25,7 +25,10 @@ function signup_Validator()
 					return;
 	} else {
 	if(password_1.value == password_2.value) {
-		//insert signup
+			alert("This username has been used.");
+		signup_button.value='Sign Up';
+	signup_button.removeAttribute('disabled');
+
 	} else {
 					alert("Please make sure both passwords match.");
 					signup_button.value='Sign Up';
