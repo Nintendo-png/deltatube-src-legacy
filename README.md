@@ -1,15 +1,13 @@
-# falcontube-src
-The source code of FalconTube
-
-![Homepage](https://i.ibb.co/L9StfSt/Capture.png)
-
+# FalconTube
+A 2013/2006 YouTube revival.
+![2013Homepage](https://ft.hwilliams8548.com/ft2013.JPG)![2006Homepage](https://ft.hwilliams8548.com/ft2006.JPG)
 ## Requirements
 - A webserver with PHP (Apache or Nginx)
 - Windows
 - A brain
 
 ## How to use
-
+## Currently the sign up script is broken
 Just copy the files in /web to the root of your webserver.
 
 With PHPMyAdmin, import the .sql file in the /sql folder.
